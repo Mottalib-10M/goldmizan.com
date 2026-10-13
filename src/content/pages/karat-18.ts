@@ -12,8 +12,8 @@ export default definePage({
     resume: 'غرام الذهب عيار 18 يحتوي على 18 جزءًا من الذهب الخالص من أصل 24، أي 75% بالضبط، والربع الباقي معادن أخرى مثل النحاس والفضة أو البلاديوم في الذهب الأبيض. لذلك يساوي سعر غرامه ثلاثة أرباع سعر غرام عيار 24، ويُختم غالبًا بالرقم 750. هذا العيار هو الأكثر استعمالًا في المجوهرات المرصعة بالألماس والأحجار وفي الساعات، لأنه أصلب من 21 و22 ويمسك الحجر جيدًا. لكن هذه القطع تحمل عادة مصنعية مرتفعة، وقد تتجاوز قيمة الذهب نفسه في قطعة صغيرة دقيقة، وعند البيع يدفع المحل ثمن الذهب وحده. الحاسبة تحسب قيمة الذهب الخام في أي وزن من عيار 18 بسعر الأونصة الآن، بالريال أو الدرهم أو الدينار، قبل المصنعية وضريبة القيمة المضافة {vat.SA} في السعودية أو {vat.AE} في الإمارات. وقبل شراء خاتم خطوبة أو ساعة مرصعة، اطلب أن تذكر الفاتورة وزن الذهب وحده.',
     faqs: [
       { q: 'هل الذهب الأبيض عيار 18 أرخص من الأصفر؟', a: 'قيمة الذهب في غرام عيار 18 واحدة سواء كان أبيض أو أصفر أو ورديًا، لأن الذهب الخالص فيه 75% في كل الحالات. الفرق يأتي من السبيكة المضافة وطلاء الروديوم في الأبيض ومن المصنعية. عند البيع يُحسب الذهب الخالص فقط، فلا يرفع اللون الأبيض قيمة القطعة.' },
-      { q: 'لماذا أخسر كثيرًا عند بيع خاتم ألماس عيار 18؟', a: 'لأن المحل يشتري الذهب بوزنه وعياره فقط، والحجر يُقيَّم منفصلًا أو لا يُقيَّم أبدًا، والمصنعية لا تعود. في الخاتم الصغير تكون المصنعية والحجر معظم السعر، فيبدو مبلغ البيع ضئيلًا. احسب قيمة الذهب وحده في حاسبة البيع قبل أن تذهب إلى المحل.' },
-      { q: 'كيف أعرف وزن الذهب في قطعة مرصعة؟', a: 'الوزن على الميزان يشمل الأحجار. الفاتورة الجيدة تذكر وزن الذهب ووزن الأحجار بالقيراط منفصلين. إن لم تذكرهما فاطلب من البائع ذلك قبل الدفع، لأن ضرب الوزن الكلي في سعر الغرام يعطيك قيمة مبالغًا فيها للذهب.' },
+      { q: 'لماذا أخسر كثيرًا عند بيع خاتم ألماس عيار 18؟', a: 'لأن المحل يشتري الذهب بوزنه وعياره فقط، والحجر يُقيَّم منفصلًا أو لا يُقيَّم أبدًا، والمصنعية لا تعود. في الخاتم الصغير تكون المصنعية والحجر معظم السعر، فيبدو مبلغ البيع ضئيلًا. احسب قيمة الذهب وحده في حاسبة البيع قبل أن تذهب إلى المحل. واحتفظ بشهادة الحجر إن وجدت.' },
+      { q: 'كيف أعرف وزن الذهب في قطعة مرصعة؟', a: 'الوزن على الميزان يشمل الأحجار. الفاتورة الجيدة تذكر وزن الذهب ووزن الأحجار بالقيراط منفصلين. إن لم تذكرهما فاطلب من البائع ذلك قبل الدفع، لأن ضرب الوزن الكلي في سعر الغرام يعطيك قيمة مبالغًا فيها للذهب. وبعض المحلات تزن الأحجار على ميزان القيراط أمامك إن طلبت ذلك.' },
     ],
     body: (h) => `
 <h2>ثلاثة أرباع غرام الذهب الخالص</h2>
@@ -32,7 +32,7 @@ export default definePage({
     faqs: [
       { q: 'Is 18K white gold cheaper than yellow?', a: 'The gold in a gram of 18K is the same whether it is white, yellow or rose, because it is 75% pure in every case. The difference comes from the alloy, the rhodium plating on white gold and the making charge. On resale only the pure gold counts, so white colour does not raise the value.' },
       { q: 'Why do I lose so much selling an 18K diamond ring?', a: 'A shop buys the gold by weight and karat only; the stone is valued separately or not at all, and the making charge does not come back. On a small ring, making and stone are most of the price, so the resale figure looks tiny. Work out the gold value alone in the selling calculator before going in.' },
-      { q: 'How do I know the gold weight of a set piece?', a: 'The scale weight includes the stones. A good invoice lists gold weight in grams and stone weight in carats separately. If yours does not, ask before paying, because multiplying the total weight by the gram price overstates the gold.' },
+      { q: 'How do I know the gold weight of a set piece?', a: 'The scale weight includes the stones. A good invoice lists gold weight in grams and stone weight in carats separately. If yours does not, ask before paying, because multiplying the total weight by the gram price overstates the gold, sometimes by a wide margin.' },
     ],
     body: (h) => `
 <h2>Three quarters of a pure gram</h2>

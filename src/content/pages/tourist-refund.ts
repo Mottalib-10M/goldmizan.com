@@ -12,8 +12,8 @@ export default definePage({
     resume: 'نظام استرداد الضريبة للسياح في الإمارات يعيد للزائر غير المقيم جزءًا من ضريبة القيمة المضافة التي دفعها على مشترياته، ومنها المجوهرات الذهبية، عند مغادرته الدولة. بحسب قرار الهيئة الاتحادية للضرائب رقم 2 لسنة 2018 وتعديلاته، يجب أن تبلغ قيمة المشتريات شاملة الضريبة {tourist.min} درهم على الأقل من البائع نفسه، وأن تخرج البضاعة مع السائح خلال {tourist.days} يومًا من تاريخ الشراء، ولا يُصدر البائع المستند لمن هو دون الثامنة عشرة. يخصم النظام رسمًا إداريًا قدره {tourist.fee} من مبلغ الضريبة المسترد، ورسمًا ثابتًا قدره {tourist.fixed} درهم عن كل طلب، ولا يتجاوز الاسترداد النقدي {tourist.cap} درهم للسائح في 24 ساعة. الحاسبة تحسب الضريبة المتضمنة في السعر، والرسوم، والمبلغ الصافي الذي تتوقع استرداده، فتعرف قيمة القطعة الحقيقية بعد العودة. احتفظ بالفاتورة ومستند الاسترداد حتى تمر من المطار.',
     faqs: [
       { q: 'من يحق له استرداد ضريبة الذهب في الإمارات؟', a: 'السائح الأجنبي، أي الشخص الطبيعي غير المقيم في أي من الدول المطبقة للضريبة، وليس من أفراد طاقم الرحلة المغادرة، بحسب اللائحة التنفيذية. يجب أن يكون موجودًا في الدولة عند الشراء، وأن يغادر مع البضاعة خلال {tourist.days} يومًا. المقيمون في الإمارات لا يستفيدون من النظام.' },
-      { q: 'هل أسترد الضريبة على المصنعية أيضًا؟', a: 'الضريبة في الفاتورة تُحسب على السعر كله، أي الذهب والمصنعية، والاسترداد يقوم على مبلغ الضريبة المدفوع في مستند الاسترداد. لذلك تأخذ الحاسبة سعر القطعة شاملًا الضريبة وتستخرج منه {vat.AE} المتضمنة، ثم تطرح الرسوم.' },
-      { q: 'هل تُسترد ضريبة السبائك الذهبية؟', a: 'السبائك والعملات الاستثمارية بنقاوة 99% فأكثر تخضع أصلًا لنسبة الصفر في الإمارات بحسب المادة 36 من اللائحة التنفيذية، فلا توجد ضريبة لتُسترد. الاسترداد يخص المجوهرات والمشغولات الخاضعة لنسبة {vat.AE}.' },
+      { q: 'هل أسترد الضريبة على المصنعية أيضًا؟', a: 'الضريبة في الفاتورة تُحسب على السعر كله، أي الذهب والمصنعية، والاسترداد يقوم على مبلغ الضريبة المدفوع في مستند الاسترداد. لذلك تأخذ الحاسبة سعر القطعة شاملًا الضريبة وتستخرج منه {vat.AE} المتضمنة، ثم تطرح الرسوم. فتسترد الضريبة على المجموع كله، بعد خصم الرسوم الإدارية والرسم الثابت للطلب.' },
+      { q: 'هل تُسترد ضريبة السبائك الذهبية؟', a: 'السبائك والعملات الاستثمارية بنقاوة 99% فأكثر تخضع أصلًا لنسبة الصفر في الإمارات بحسب المادة 36 من اللائحة التنفيذية، فلا توجد ضريبة لتُسترد. الاسترداد يخص المجوهرات والمشغولات الخاضعة لنسبة {vat.AE}. فالمقيم والسائح يشتريان السبيكة المؤهلة بالسعر نفسه، ولا يحتاج أي منهما إلى مستند استرداد عند المغادرة.' },
     ],
     body: (h) => `
 <h2>الشروط كما وردت في القرار</h2>
@@ -32,7 +32,7 @@ export default definePage({
     faqs: [
       { q: 'Who can reclaim VAT on gold in the UAE?', a: 'An overseas tourist, meaning a natural person not resident in any of the implementing states and not a crew member on the departing flight, under the Executive Regulation. You must be in the country when buying and leave with the goods within {tourist.days} days. UAE residents cannot use the scheme, whatever their passport.' },
       { q: 'Is the VAT on the making charge refunded too?', a: 'VAT on the invoice is charged on the whole price, gold and making, and the refund is based on the VAT paid shown on the refund document. That is why the calculator takes the VAT-inclusive price, extracts the {vat.AE} it contains and then subtracts the fees.' },
-      { q: 'Is VAT on gold bars refunded?', a: 'Investment bars and coins of 99% purity or more are already zero-rated in the UAE under Article 36 of the Executive Regulation, so there is no VAT to reclaim. The refund concerns jewellery and other items taxed at {vat.AE}.' },
+      { q: 'Is VAT on gold bars refunded?', a: 'Investment bars and coins of 99% purity or more are already zero-rated in the UAE under Article 36 of the Executive Regulation, so there is no VAT to reclaim. The refund concerns jewellery and other items taxed at {vat.AE}, such as a 22K set or a chain.' },
     ],
     body: (h) => `
 <h2>The conditions as the decision sets them</h2>
