@@ -40,7 +40,7 @@ const tp = page.toolProps ?? {};
     </div>
     <p class="mb-8 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method', lang)}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a></p>
     <div class="prose prose-slate max-w-none">
-      {parts.map((p, i) => i % 2 === 0 ? <Fragment set:html={p} /> : <Tool client:visible tool={p} lang={lang} country={tp.country} karat={tp.karat} mini />)}
+      {parts.map((p, i) => i % 2 === 0 ? <Fragment set:html={p} /> : <Tool client:load tool={p} lang={lang} country={tp.country} karat={tp.karat} mini />)}
     </div>
   </article>
 </PageLayout>

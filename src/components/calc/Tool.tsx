@@ -98,7 +98,7 @@ function Jewel({ lang, country = 'SA', karat = 21, mini }: ToolArgs) {
       fields={<>
         <div className="grid grid-cols-2 gap-x-4"><CountrySelect id="j-c" lang={lang} value={c} onChange={(x) => { setC(x); setOwn(0); }} /><KaratSelect id="j-k" lang={lang} value={k} onChange={setK} /></div>
         <div className="grid grid-cols-2 gap-x-4"><NumberField id="j-g" lang={lang} label={T(lang, 'وزن القطعة', 'Weight of the piece')} value={g} onChange={setG} unit={T(lang, 'غرام', 'g')} decimals={2} max={100000} />
-          <Toggle id="j-mode" label={T(lang, 'طريقة المصنعية', 'Making charge basis')} value={mode} onChange={(v) => setMode(v as MakingMode)} options={[{ value: 'perGram', label: T(lang, 'للغرام', 'Per gram') }, { value: 'percent', label: '%' }]} /></div>
+          <Toggle id="j-mode" label={T(lang, 'طريقة المصنعية', 'Making charge basis')} value={mode} onChange={(v) => setMode(v as MakingMode)} options={[{ value: 'perGram', label: T(lang, 'للغرام', 'Gram') }, { value: 'percent', label: '%' }]} /></div>
         <NumberField id="j-mk" lang={lang} label={mode === 'percent' ? T(lang, 'المصنعية بالنسبة من قيمة الذهب', 'Making charge as % of gold value') : T(lang, 'المصنعية لكل غرام', 'Making charge per gram')} value={mk} onChange={setMk} decimals={2} unit={mode === 'percent' ? '%' : curLabel(C, lang)} max={mode === 'percent' ? 100 : 10000}
           help={T(lang, 'رقم يحدده المحل لكل قطعة؛ اسأل عنه قبل الوزن', 'Set by the shop for each piece; ask before it is weighed')} />
         <Price24Field id="j-p" lang={lang} country={c} site={site} own={own} setOwn={setOwn} />

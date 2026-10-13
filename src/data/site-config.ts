@@ -11,7 +11,7 @@ export const CURRENCY = 'SAR';
 export const YEAR = 2026;
 /** Année de création du site — signal d'ancienneté (RECETTE §8.0). */
 export const SITE_FOUNDED = '2026';
-export const LAST_UPDATED = '2026-10-12';
+export const LAST_UPDATED = '2026-10-13';
 export const AUTHOR_NAME = 'Radif Partners';
 export const AUTHOR_ROLE: Record<string, string> = {"ar": "ناشر مستقل لحاسبات أسعار الذهب في الخليج", "en": "Independent publisher of Gulf gold price calculators"};
 export const AUTHOR_DESC: Record<string, string> = {"ar": "تصدر Radif Partners موقع ميزان الذهب: سعر غرام الذهب لعيارات 24 و22 و21 و18 في السعودية والإمارات والكويت وقطر والبحرين وعُمان، محسوبًا أمامك من سعر الأونصة بالدولار وسعر الصرف الرسمي للبنك المركزي، مع حاسبات لسعر القطعة بالمصنعية وضريبة القيمة المضافة لكل بلد، وقيمة البيع، والزكاة، واسترداد ضريبة السياح في الإمارات.", "en": "Radif Partners publishes Gold Mizan: the price of a gram of 24, 22, 21 and 18 karat gold in Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain and Oman, worked out in front of you from the dollar ounce price and each central bank's official exchange rate, with calculators for a piece's price with making charges and each country's VAT, resale value, zakat and the UAE tourist VAT refund."};
