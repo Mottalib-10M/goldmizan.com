@@ -3,6 +3,8 @@ import { route, ROUTES, type Locale } from '../i18n/routes';
 import { P, type SourceKey } from './engine/params';
 import type { Helpers } from './page-types';
 import { formatNumber, formatDecimal, formatPercent, money, displayDate } from './format';
+import history from '../data/history-monthly.json';
+import { OZ } from './engine/gold';
 
 const esc = (s: string | number) => String(s).replace(/&(?!(?:[a-z]+|#\d+);)/g, '&amp;').replace(/</g, '&lt;');
 
@@ -40,4 +42,18 @@ export function fill(s: string, lang: Locale): string {
     'year': String(P.year),
   };
   return s.replace(/\{([a-zA-Z.0-9]+)\}/g, (m, k) => { if (!(k in map)) throw new Error(`jeton inconnu ${m}`); return map[k]; });
+}
+
+/** Tableau des moyennes annuelles (Banque mondiale, Pink Sheet) : once en USD, gramme de 24 en SAR et AED. */
+export function annualTable(lang: Locale): string {
+  const h = helpers(lang);
+  const rows = (history.annual as Array<{ y: number; usd: number; n: number }>).filter((r) => r.y >= 2016).reverse().map((r) => [
+    r.n < 12 ? `${r.y} (${formatNumber(r.n, 0, lang)} ${lang === 'ar' ? 'أشهر' : 'months'})` : String(r.y),
+    formatNumber(r.usd, 0, lang),
+    formatNumber((r.usd / OZ) * P.countries.SA.perUsd, 2, lang),
+    formatNumber((r.usd / OZ) * P.countries.AE.perUsd, 2, lang),
+  ]);
+  const head = lang === 'ar' ? ['السنة', 'الأونصة (دولار)', 'غرام 24 (ريال)', 'غرام 24 (درهم)'] : ['Year', 'Ounce (USD)', '24K gram (SAR)', '24K gram (AED)'];
+  const cap = lang === 'ar' ? `المصدر: البنك الدولي، بيانات أسعار السلع الشهرية، تحديث ${history.updated}` : `Source: World Bank, monthly commodity price data, updated ${history.updated}`;
+  return h.table(head, rows, cap);
 }
