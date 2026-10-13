@@ -54,6 +54,6 @@ export function annualTable(lang: Locale): string {
     formatNumber((r.usd / OZ) * P.countries.AE.perUsd, 2, lang),
   ]);
   const head = lang === 'ar' ? ['السنة', 'الأونصة (دولار)', 'غرام 24 (ريال)', 'غرام 24 (درهم)'] : ['Year', 'Ounce (USD)', '24K gram (SAR)', '24K gram (AED)'];
-  const cap = lang === 'ar' ? `المصدر: البنك الدولي، بيانات أسعار السلع الشهرية، تحديث ${history.updated}` : `Source: World Bank, monthly commodity price data, updated ${history.updated}`;
+  const cap = lang === 'ar' ? `المصدر: البنك الدولي، بيانات أسعار السلع الشهرية، تحديث ${displayDate(history.updated, lang)}` : `Source: World Bank, monthly commodity price data, updated ${displayDate(history.updated, lang)}`;
   return h.table(head, rows, cap);
 }

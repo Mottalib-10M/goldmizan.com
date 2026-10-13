@@ -20,7 +20,9 @@ years = {}
 for m, v in series:
     years.setdefault(int(m[:4]), []).append(v)
 annual = [{'y': y, 'usd': round(sum(v) / len(v), 2), 'n': len(v)} for y, v in sorted(years.items()) if y >= 2000]
-out = {'source': 'World Bank Commodity Price Data (The Pink Sheet), monthly, Gold ($/troy oz)', 'updated': updated.replace('Updated on ', ''), 'months': months, 'annual': annual}
+import datetime
+upd = datetime.datetime.strptime(updated.replace('Updated on ', '').strip(), '%B %d, %Y').date().isoformat()
+out = {'source': 'World Bank Commodity Price Data (The Pink Sheet), monthly, Gold ($/troy oz)', 'updated': upd, 'months': months, 'annual': annual}
 p = os.path.join(os.path.dirname(__file__), '..', 'src', 'data', 'history-monthly.json')
 json.dump(out, open(p, 'w'), indent=0)
 print(f"{len(months)} mois, dernier {months[-1]}, {updated}")
