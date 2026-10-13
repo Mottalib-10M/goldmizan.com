@@ -1,0 +1,46 @@
+---
+/**
+ * Accueil (pilier). Trame propre au sujet : titre, une ligne, tableau du jour (simulateur, premier
+ * écran), bloc citable replié, puis comparaison des six pays, taux officiels, TVA, historique, FAQ.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Tool from './calc/Tool';
+import Clamp from './Clamp.astro';
+import { HOME } from '../content/home';
+import { helpers, fill, annualTable } from '../lib/helpers';
+import { route, type Locale } from '../i18n/routes';
+import { label, navCategories } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { P } from '../lib/engine/params';
+import { organizationSchema, websiteSchema, webApplicationSchema, faqSchema, webPageSchema } from '../lib/seo';
+import { AUTHOR_NAME } from '../data/site-config';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const H = HOME[lang];
+const x = { title: fill(H.title, lang), description: fill(H.description, lang), h1: H.h1, lead: H.lead, resume: fill(H.resume, lang), faqs: H.faqs.map((f) => ({ q: fill(f.q, lang), a: fill(f.a, lang) })) };
+const body = fill(H.body(helpers(lang)), lang).replace('<!--table:annual-->', annualTable(lang));
+const parts = body.split(/<!--tool:([a-z]+)-->/);
+const path = route('home', lang);
+const ui = t(lang);
+const jsonLd = [organizationSchema(lang), websiteSchema(lang), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), webPageSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(x.faqs, lang)];
+const sources = ['sama', 'cbuae', 'cbb', 'cbo', 'cbk', 'ksaVatLaw', 'uaeDecreeLaw', 'goldApi', 'worldBank'].map((k) => ({ name: P.sources[k].label[lang], url: P.sources[k].url }));
+const cats = navCategories(lang);
+const country = lang === 'ar' ? 'SA' : 'AE';
+const karat = lang === 'ar' ? 21 : 22;
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} sources={sources}>
+  <h1 class="mb-1 text-[1.6rem] font-bold leading-tight text-navy-900 sm:text-3xl">{x.h1}</h1>
+  <p class="mb-3 text-navy-700">{x.lead}</p>
+  <div class="mb-3"><Tool client:load tool="board" lang={lang} country={country} karat={karat} /></div>
+  <Clamp text={x.resume} lang={lang} id="clamp-home" class="mb-3" />
+  <p class="mb-8 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('method', lang)} class="underline hover:text-navy-900">{label('method', lang)}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a></p>
+  <div class="prose prose-slate max-w-none">
+    {parts.map((p, i) => i % 2 === 0 ? <Fragment set:html={p} /> : <Tool client:visible tool={p} lang={lang} karat={karat} mini />)}
+  </div>
+  <section class="mt-12" data-chrome>
+    <h2 class="mb-4 text-2xl font-bold text-navy-900">{lang === 'ar' ? 'كل الحاسبات والصفحات' : 'All calculators and pages'}</h2>
+    <div class="grid gap-6 sm:grid-cols-3">
+      {cats.map((c) => (<div><h3 class="mb-2 font-semibold text-navy-900">{c.label}</h3><ul class="space-y-1 text-sm">{c.links.map((l) => <li><a href={l.href} class="text-accent-700 hover:underline">{l.label}</a></li>)}</ul></div>))}
+    </div>
+  </section>
+</PageLayout>

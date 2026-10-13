@@ -127,7 +127,7 @@ const otherHref = alts?.[other] ?? route('home', other);
             <p>{ui.footerBrowser}</p>
             <p>{ui.asOf} {YEAR}{lang === 'ar' ? '،' : ','} {ui.lastUpdated} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, lang)}</time></p>
             <p>&copy; {YEAR} {SITE_NAMES[lang]}. {ui.footerDisclaimer}</p>
-            <p><a href={otherHref} hreflang={LANG_TAGS[other]} lang={LANG_TAGS[other]} class="underline hover:text-navy-900">{ui.otherLangTitle}</a></p>
+            <p><a href={otherHref} hreflang={LANG_TAGS[other]} lang={LANG_TAGS[other]} class="underline hover:text-navy-900">{lang === 'ar' ? `English version, updated ${displayDate(LAST_UPDATED, 'en')}` : `${ui.otherLangTitle}، آخر تحديث ${displayDate(LAST_UPDATED, 'ar')}`}</a></p>
           </div>
         </div>
       </div>

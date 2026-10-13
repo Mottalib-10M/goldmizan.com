@@ -1,0 +1,16 @@
+---
+/** Calculateur nu pour iframe (RECETTE §13) : noindex, hors sitemap, crédit visible. */
+import '../../styles/global.css';
+import Tool from '../../components/calc/Tool';
+import { SITE_URL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<!doctype html>
+<html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex, nofollow" /><title>{SITE_NAMES[lang]}</title><link rel="canonical" href={`${SITE_URL}${route('home', lang)}`} /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /></head>
+  <body class="bg-white p-3 text-navy-900">
+    <main><Tool client:load tool="board" lang={lang} country={lang === 'ar' ? 'SA' : 'AE'} karat={lang === 'ar' ? 21 : 22} /></main>
+    <p class="mt-2 text-xs text-navy-600"><a href={`${SITE_URL}${route('home', lang)}`} target="_blank" rel="noopener">{SITE_NAMES[lang]}</a></p>
+  </body>
+</html>

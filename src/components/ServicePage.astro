@@ -1,0 +1,33 @@
+---
+/** Page de service (à propos, méthode, contact, charte, confidentialité, mentions, cookies, widget). */
+import PageLayout from '../layouts/PageLayout.astro';
+import { SERVICE } from '../content/service';
+import { helpers, fill } from '../lib/helpers';
+import { route, type Locale } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { SITE_URL, SITE_NAMES } from '../data/site-config';
+import { profilePageSchema, contactPageSchema, webPageSchema, breadcrumbSchema } from '../lib/seo';
+import { t } from '../i18n/ui';
+interface Props { id: 'about' | 'method' | 'contact' | 'editorial' | 'privacy' | 'terms' | 'cookies' | 'widget'; lang: Locale; noindex?: boolean }
+const { id, lang, noindex = false } = Astro.props;
+const s = SERVICE[id][lang];
+const title = fill(s.title, lang), description = fill(s.description, lang);
+const html = fill(s.body(helpers(lang)), lang);
+const path = route(id, lang);
+const jsonLd = [webPageSchema({ name: s.h1, description, path, lang }), breadcrumbSchema([{ name: t(lang).breadcrumbHome, path: route('home', lang) }, { name: label(id, lang), path }])];
+if (id === 'about') jsonLd.push(profilePageSchema({ path, lang }));
+if (id === 'contact') jsonLd.push(contactPageSchema({ name: s.h1, description, path, lang }));
+const embed = `${SITE_URL}/embed/${lang === 'ar' ? 'gold-price' : 'gold-rate'}/`;
+const code = `<iframe src="${embed}" title="${SITE_NAMES[lang]}" width="100%" height="560" style="border:0" loading="lazy"></iframe>\n<p><a href="${SITE_URL}${route('home', lang)}">${SITE_NAMES[lang]}</a></p>`;
+---
+<PageLayout title={title} description={description} lang={lang} noindex={noindex} jsonLd={jsonLd} breadcrumbs={[{ label: label(id, lang) }]}>
+  <h1 class="mb-6 text-3xl font-bold text-navy-900">{s.h1}</h1>
+  <div class="prose prose-slate max-w-none"><Fragment set:html={html} /></div>
+  {id === 'widget' && (
+    <div class="prose prose-slate max-w-none">
+      <p>{lang === 'ar' ? 'انسخ هذا الرمز وألصقه في صفحتك. الحاسبة تعرض سعر الغرام لكل عيار في دول الخليج الست بسعر الأونصة الآن، وتعمل في متصفح الزائر دون أي جمع للبيانات. الاستعمال مجاني بشرط بقاء رابط المصدر تحت الإطار.' : 'Copy this code into your page. The calculator shows the gram price for each karat in the six Gulf countries at the current ounce price and runs in the visitor’s browser with no data collected. Use is free provided the source link stays under the frame.'}</p>
+      <pre dir="ltr" class="overflow-x-auto"><code>{code}</code></pre>
+      <p><a href={embed}>{lang === 'ar' ? 'معاينة الحاسبة كما تظهر في الإطار' : 'Preview the calculator as it appears in the frame'}</a></p>
+    </div>
+  )}
+</PageLayout>
