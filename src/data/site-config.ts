@@ -9,7 +9,7 @@ export const LOCALE_TAG = 'ar-SA';
 export const NUMBER_LOCALES: Record<string, string> = { ar: 'ar-u-nu-latn', en: 'en-AE' };
 export const CURRENCY = 'SAR';
 export const YEAR = 2026;
-/** Année de création du site — signal d'ancienneté (RECETTE §8.0). */
+/** Année de création du site, signal d'ancienneté (RECETTE §8.0). */
 export const SITE_FOUNDED = '2026';
 export const LAST_UPDATED = '2026-10-13';
 export const AUTHOR_NAME = 'Radif Partners';
@@ -34,7 +34,7 @@ export const CLARITY_ID = '';
 export const INDEXNOW_KEY = 'b7d3e91a5c4f2086ad1e3f7c9b5a2d48';
 
 /* ------------------------------------------------------------------------- *
- * IDENTITÉ LÉGALE — À COMPLÉTER AVANT LA MISE EN LIGNE
+ * IDENTITÉ LÉGALE, À COMPLÉTER AVANT LA MISE EN LIGNE
  * Ces champs alimentent la mention légale du pays, la politique de confidentialité,
  * la page contact et le schema Organization. Un champ vide s'affiche en jaune
  * sur le site. Contrôle : `npm run check:legal`.
