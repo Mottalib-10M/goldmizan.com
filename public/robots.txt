@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://golfe-or.example/sitemap-index.xml
+Sitemap: https://goldmizan.com/sitemap-index.xml

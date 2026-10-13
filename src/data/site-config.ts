@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://golfe-or.example";
+export const SITE_URL = "https://goldmizan.com";
 export const SITE_NAMES: Record<string, string> = {"ar": "ميزان الذهب", "en": "Gold Mizan"};
 export const LANG_TAGS: Record<string, string> = {"ar": "ar", "en": "en"};
 export const OG_LOCALES: Record<string, string> = {"ar": "ar_SA", "en": "en_AE"};
@@ -19,7 +19,7 @@ export const AUTHOR_DESC: Record<string, string> = {"ar": "تصدر Radif Partne
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"ar": ["سعر الذهب حسب العيار", "مصنعية الذهب", "ضريبة القيمة المضافة على الذهب في السعودية والإمارات", "زكاة الذهب", "بيع الذهب المستعمل", "سبائك الذهب الاستثمارية"], "en": ["Gold price per karat", "Jewellery making charges", "VAT on gold in Saudi Arabia and the UAE", "Zakat on gold", "Selling used gold", "Investment gold bars"]};
-export const CONTACT_EMAIL = "contact@golfe-or.example";
+export const CONTACT_EMAIL = "contact@goldmizan.com";
 export const THEME_COLOR = '#8C6A12';
 export const LOGO_SYMBOL = 'Au';
 export const BING_VERIFY_CODE = '';
