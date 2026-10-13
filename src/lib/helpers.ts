@@ -34,7 +34,7 @@ export function fill(s: string, lang: Locale): string {
     'peg.SA': formatDecimal(c.SA.perUsd, 4, lang), 'peg.AE': formatDecimal(c.AE.perUsd, 4, lang), 'peg.BH': formatDecimal(c.BH.perUsd, 4, lang), 'peg.OMusd': formatDecimal(2.6008, 4, lang),
     'peg.KW': formatDecimal(c.KW.perUsd, 4, lang), 'peg.QA': formatDecimal(c.QA.perUsd, 4, lang),
     'oz': formatDecimal(P.units.troyOunceGrams, 7, lang), 'oz2': formatDecimal(P.units.troyOunceGrams, 2, lang),
-    'tola': formatDecimal(P.units.tolaGrains * P.units.grainGrams, 4, lang),
+    'tola': formatDecimal(P.units.tolaGrains * P.units.grainGrams, 4, lang), 'grain': formatDecimal(P.units.grainGrams, 8, lang),
     'zakat.rate': formatPercent(P.zakat.rate, 1, lang), 'nisab': formatNumber(P.zakat.nisabGramsCommon, 0, lang), 'mithqal': formatNumber(P.zakat.nisabMithqal, 0, lang),
     'tourist.fee': formatPercent(R.adminFeeRate, 0, lang), 'tourist.fixed': formatDecimal(R.fixedFeeAed, 1, lang), 'tourist.min': formatNumber(R.minPurchaseAed, 0, lang), 'tourist.days': formatNumber(R.exportDays, 0, lang), 'tourist.cap': formatNumber(R.cashCapAed, 0, lang),
     'year': String(P.year),
