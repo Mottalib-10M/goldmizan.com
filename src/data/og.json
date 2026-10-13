@@ -1,0 +1,20 @@
+{
+ "accent": "#8C6A12",
+ "symbol": "Au",
+ "variants": [
+  {
+   "file": "og-ar.png",
+   "title": "ميزان الذهب",
+   "subtitle": "",
+   "badge": "2026",
+   "brand": "ميزان الذهب"
+  },
+  {
+   "file": "og-en.png",
+   "title": "Gold Mizan",
+   "subtitle": "",
+   "badge": "2026",
+   "brand": "Gold Mizan"
+  }
+ ]
+}

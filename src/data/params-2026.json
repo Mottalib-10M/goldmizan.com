@@ -1,0 +1,249 @@
+{
+ "_lisezmoi": "Tous les paramètres du site (RECETTE §4). Chaque valeur a été relue sur la source officielle citée le jour indiqué dans retrieved_at. Le cours de l'or n'est PAS ici : il vient de spot-snapshot.json (build) puis de l'API gold-api.com dans le navigateur.",
+ "year": 2026,
+ "retrieved_at": "2026-10-13",
+ "valid_from": "2026-01-01",
+ "valid_to": "2026-12-31",
+ "units": {
+  "troyOunceGrams": 31.1034768,
+  "grainGrams": 0.06479891,
+  "tolaGrains": 180
+ },
+ "karats": [
+  {
+   "k": 24,
+   "purity": 0.999,
+   "fineness": "999"
+  },
+  {
+   "k": 22,
+   "purity": 0.916,
+   "fineness": "916"
+  },
+  {
+   "k": 21,
+   "purity": 0.875,
+   "fineness": "875"
+  },
+  {
+   "k": 18,
+   "purity": 0.75,
+   "fineness": "750"
+  }
+ ],
+ "_karats_note": "Le prix affiché par carat suit la convention du marché du Golfe : prix du 24 × k/24 (22/24 = 0,9167 ; 21/24 = 0,875 ; 18/24 = 0,75). La colonne purity sert au calcul du métal fin (zakat, rachat) ; 24 carats = 999 millièmes.",
+ "countries": {
+  "SA": {
+   "currency": "SAR",
+   "perUsd": 3.75,
+   "fx": "peg",
+   "vat": 0.15,
+   "investmentZero": "first-supply",
+   "source": "sama",
+   "vatSource": "ksaVatLaw"
+  },
+  "AE": {
+   "currency": "AED",
+   "perUsd": 3.6725,
+   "fx": "peg",
+   "vat": 0.05,
+   "investmentZero": "all",
+   "source": "cbuae",
+   "vatSource": "uaeDecreeLaw"
+  },
+  "BH": {
+   "currency": "BHD",
+   "perUsd": 0.376,
+   "fx": "peg",
+   "vat": 0.1,
+   "investmentZero": "unverified",
+   "source": "cbb",
+   "vatSource": "nbrRate"
+  },
+  "OM": {
+   "currency": "OMR",
+   "perUsdOfficial": "1/2.6008",
+   "perUsd": 0.384497,
+   "fx": "peg",
+   "vat": 0.05,
+   "investmentZero": "first-supply",
+   "source": "cbo",
+   "vatSource": "omanVatLaw"
+  },
+  "KW": {
+   "currency": "KWD",
+   "perUsd": 0.30785,
+   "fx": "live",
+   "fxFallbackDate": "2026-09-30",
+   "vat": 0,
+   "investmentZero": "none",
+   "source": "cbk",
+   "vatSource": "none"
+  },
+  "QA": {
+   "currency": "QAR",
+   "perUsd": 3.645,
+   "fx": "live",
+   "fxFallbackDate": "2026-09-30",
+   "vat": 0,
+   "investmentZero": "none",
+   "source": "cbuaeFx",
+   "vatSource": "none"
+  }
+ },
+ "_fx_note": "KW et QA : taux de repli = taux du 30-09-2026 publiés par la Banque centrale des EAU (AED 3,6725 / USD ; KWD 11,929511 AED ; QAR 1,007545 AED), soit 0,30785 KWD et 3,6450 QAR par dollar. Dans le navigateur, le taux du jour vient d'open.er-api.com (ExchangeRate-API, usage commercial permis, attribution exigée).",
+ "uaeTouristRefund": {
+  "adminFeeRate": 0.13,
+  "fixedFeeAed": 4.8,
+  "minPurchaseAed": 250,
+  "cashCapAed": 35000,
+  "exportDays": 90
+ },
+ "zakat": {
+  "rate": 0.025,
+  "nisabMithqal": 20,
+  "nisabGramsCommon": 85
+ },
+ "sources": {
+  "sama": {
+   "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news-557.aspx",
+   "label": {
+    "ar": "البنك المركزي السعودي (ساما): الالتزام بسعر الصرف الرسمي 3.75 ريال للدولار",
+    "en": "Saudi Central Bank (SAMA): commitment to the official rate of SAR 3.75 per dollar"
+   }
+  },
+  "cbuae": {
+   "url": "https://centralbank.ae/media/s1hdr5ms/fx_sep26_en.pdf",
+   "label": {
+    "ar": "مصرف الإمارات العربية المتحدة المركزي: أسعار الصرف مقابل الدرهم، سبتمبر 2026 (الدولار 3.6725)",
+    "en": "Central Bank of the UAE: exchange rates against the dirham, September 2026 (USD 3.6725)"
+   }
+  },
+  "cbuaeFx": {
+   "url": "https://centralbank.ae/media/s1hdr5ms/fx_sep26_en.pdf",
+   "label": {
+    "ar": "مصرف الإمارات المركزي: أسعار الدينار الكويتي والريال القطري مقابل الدرهم، 30 سبتمبر 2026",
+    "en": "Central Bank of the UAE: Kuwaiti dinar and Qatari riyal against the dirham, 30 September 2026"
+   }
+  },
+  "cbb": {
+   "url": "https://www.cbb.gov.bh/monetary-policy/",
+   "label": {
+    "ar": "مصرف البحرين المركزي: ربط الدينار عند 0.376 دينار للدولار",
+    "en": "Central Bank of Bahrain: peg at BHD 0.376 per US dollar"
+   }
+  },
+  "cbo": {
+   "url": "https://cbo.gov.om/Pages/FixedPeg.aspx",
+   "label": {
+    "ar": "البنك المركزي العُماني: الربط الثابت عند 2.6008 دولار للريال",
+    "en": "Central Bank of Oman: fixed peg at USD 2.6008 per rial"
+   }
+  },
+  "cbk": {
+   "url": "https://www.cbk.gov.kw/en/monetary-policy/exchange-rate-policy",
+   "label": {
+    "ar": "بنك الكويت المركزي: سياسة سعر الصرف وربط الدينار بسلة عملات",
+    "en": "Central Bank of Kuwait: exchange rate policy, dinar pegged to a basket"
+   }
+  },
+  "ksaVatLaw": {
+   "url": "https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/%d9%86%d8%b8%d8%a7%d9%85%20%d8%b6%d8%b1%d9%8a%d8%a8%d8%a9%20%d8%a7%d9%84%d9%82%d9%8a%d9%85%d8%a9%20%d8%a7%d9%84%d9%85%d8%b6%d8%a7%d9%81%d8%a9%20%282%29.pdf",
+   "label": {
+    "ar": "هيئة الزكاة والضريبة والجمارك: نظام ضريبة القيمة المضافة، المادة الثانية (النسبة الأساسية 15%)",
+    "en": "ZATCA: VAT Law, Article 2 (basic rate 15%)"
+   }
+  },
+  "ksaVatRegs": {
+   "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Implmenting%20Regulations%20of%20the%20VAT%20Law_EN.pdf",
+   "label": {
+    "ar": "هيئة الزكاة والضريبة والجمارك: اللائحة التنفيذية لنظام ضريبة القيمة المضافة، المادة 36 (توريدات المعادن الاستثمارية)",
+    "en": "ZATCA: VAT Implementing Regulations, Article 36 (supplies of investment metals)"
+   }
+  },
+  "uaeDecreeLaw": {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+   "label": {
+    "ar": "الهيئة الاتحادية للضرائب: المرسوم بقانون اتحادي رقم 8 لسنة 2017، المادة 3 (نسبة 5%)",
+    "en": "Federal Tax Authority: Federal Decree-Law No. 8 of 2017, Article 3 (5% rate)"
+   }
+  },
+  "uaeExecReg": {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "label": {
+    "ar": "الهيئة الاتحادية للضرائب: اللائحة التنفيذية (قرار مجلس الوزراء رقم 52 لسنة 2017 وتعديلاته)، المادة 36 (المعادن الثمينة الاستثمارية)",
+    "en": "Federal Tax Authority: Executive Regulation (Cabinet Decision No. 52 of 2017 as amended), Article 36 (investment precious metals)"
+   }
+  },
+  "uaeTourist": {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/Decision%20No.%202%20of%202018%20on%20Tax%20Refunds%20for%20Tourists%20Scheme%20C%20-%20For%20publishing%20032023.pdf",
+   "label": {
+    "ar": "الهيئة الاتحادية للضرائب: القرار رقم 2 لسنة 2018 بشأن نظام استرداد الضريبة للسياح وتعديلاته",
+    "en": "Federal Tax Authority: Decision No. 2 of 2018 on the Tax Refunds for Tourists Scheme, as amended"
+   }
+  },
+  "nbrRate": {
+   "url": "https://www.nbr.gov.bh/VAT/what_is_vat",
+   "label": {
+    "ar": "الجهاز الوطني للإيرادات (البحرين): النسبة الأساسية 10% منذ 1 يناير 2022",
+    "en": "National Bureau for Revenue (Bahrain): 10% standard rate since 1 January 2022"
+   }
+  },
+  "omanVatLaw": {
+   "url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Law+.pdf/9cbe8926-066b-d48d-2b7f-14f41b4c19a8?t=1733169733344",
+   "label": {
+    "ar": "جهاز الضرائب (عُمان): قانون ضريبة القيمة المضافة، المادتان 36 (5%) و51 (الذهب الاستثماري بنسبة الصفر)",
+    "en": "Oman Tax Authority: VAT Law, Articles 36 (5%) and 51 (investment gold zero-rated)"
+   }
+  },
+  "ukWeights": {
+   "url": "https://www.legislation.gov.uk/ukpga/1985/72/schedule/1",
+   "label": {
+    "ar": "قانون الأوزان والمقاييس البريطاني 1985، الملحق 1: الأونصة التروي = 31.1034768 غرام",
+    "en": "UK Weights and Measures Act 1985, Schedule 1: troy ounce = 31.1034768 g"
+   }
+  },
+  "worldBank": {
+   "url": "https://www.worldbank.org/en/research/commodity-markets",
+   "label": {
+    "ar": "البنك الدولي: بيانات أسعار السلع الشهرية (Pink Sheet)، تحديث 2 أكتوبر 2026",
+    "en": "World Bank: monthly commodity price data (Pink Sheet), updated 2 October 2026"
+   }
+  },
+  "goldApi": {
+   "url": "https://gold-api.com/terms",
+   "label": {
+    "ar": "gold-api.com: شروط الاستخدام (الاستخدام التجاري مسموح، المادة 9)",
+    "en": "gold-api.com: terms of service (commercial use permitted, section 9)"
+   }
+  },
+  "fxApi": {
+   "url": "https://www.exchangerate-api.com/docs/free",
+   "label": {
+    "ar": "ExchangeRate-API: شروط الاستخدام المفتوح (مع الإسناد)",
+    "en": "ExchangeRate-API: open access terms (attribution required)"
+   }
+  },
+  "binbazNisab": {
+   "url": "https://binbaz.org.sa/fatwas/5393/",
+   "label": {
+    "ar": "الموقع الرسمي للشيخ ابن باز: نصاب الذهب عشرون مثقالًا وزكاته ربع العشر",
+    "en": "Official site of Sheikh Ibn Baz: the gold nisab is 20 mithqal and zakat is one fortieth"
+   }
+  },
+  "binbazHuli": {
+   "url": "https://binbaz.org.sa/fatwas/1476/%D8%AD%D9%83%D9%85-%D8%B2%D9%83%D8%A7%D8%A9-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%88%D8%A7%D9%84%D9%81%D8%B6%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%8A%D9%86-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D9%86%D8%A9",
+   "label": {
+    "ar": "الموقع الرسمي للشيخ ابن باز: حكم زكاة الذهب المعد للاستعمال والزينة (الخلاف بين العلماء)",
+    "en": "Official site of Sheikh Ibn Baz: zakat on gold worn as jewellery (the scholarly disagreement)"
+   }
+  },
+  "worldBankLicence": {
+   "url": "https://datacatalog.worldbank.org/search/dataset/0038238/commodity-prices-history-and-projections",
+   "label": {
+    "ar": "كتالوج بيانات البنك الدولي: بيانات أسعار السلع، رخصة المشاع الإبداعي CC BY 4.0",
+    "en": "World Bank Data Catalog: commodity price data, Creative Commons Attribution 4.0 licence"
+   }
+  }
+ }
+}

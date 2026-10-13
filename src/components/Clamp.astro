@@ -1,0 +1,17 @@
+---
+/** Chapeau replié (RECETTE §26) : UN seul <p>, entier dans le HTML ; l'écran montre la première phrase,
+ *  la suite est dans un <span> masqué du même <p>, dépliée par une case à cocher sans JavaScript. */
+import { t } from '../i18n/ui';
+import type { Locale } from '../i18n/routes';
+interface Props { text: string; lang: Locale; id: string; sentences?: number; class?: string }
+const { text, lang, id, sentences = 1, class: cls = '' } = Astro.props;
+// Coupe après « . » « ؟ » « ! » suivis d'une espace : jamais au milieu d'une phrase ni d'un nombre (21.5).
+const parts = text.split(/(?<=[.!?؟])\s+(?=[^\s\d])/u);
+const head = parts.slice(0, sentences).join(' ').trim();
+const rest = parts.slice(sentences).join(' ').trim();
+---
+<div class={`clamp relative ${cls}`}>
+  {rest && <input type="checkbox" id={id} class="clamp-toggle" aria-hidden="true" tabindex="-1" />}
+  <p class="text-navy-800">{head}{rest && <span class="clamp-rest"> {rest}</span>}</p>
+  {rest && <label for={id} class="clamp-more">{t(lang).readMore}</label>}
+</div>

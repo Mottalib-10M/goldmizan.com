@@ -1,0 +1,23 @@
+{
+ "name": "ميزان الذهب",
+ "short_name": "Gold Mizan",
+ "description": "سعر غرام الذهب اليوم لعيارات 24 و22 و21 و18 في الخليج، وحساب سعر القطعة بالمصنعية والضريبة.",
+ "start_url": "/ar/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#8C6A12",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ],
+ "lang": "ar",
+ "dir": "rtl"
+}
