@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'buy-sell-gap', nav: 'Gold buy and sell gap', card: 'What you lose selling a piece right after buying: making, VAT and deduction.',
-    title: 'Gold Buy and Sell Gap {year}: What You Lose When Reselling a Piece',
-    description: 'Work out the gap between what a gold piece costs with making and VAT and what a shop pays for it the same day, and how far gold must rise for you to break even in the Gulf.',
+    title: 'Gold Buy and Sell Gap {year}: What You Lose When Reselling',
+    description: 'The gap between what a gold piece costs with making and VAT and what a shop pays for it the same day, and how far gold must rise for you to break even.',
     h1: 'The gold buy and sell gap',
     resume: 'Buy a piece of gold and sell it the same day and you lose money even if the ounce has not moved, because three things never come back: the making charge you paid, the VAT on it and on the gold, and the shop’s deduction when it buys from you. In Saudi Arabia VAT is {vat.SA} of the pre-VAT price, which alone creates a large immediate loss on any piece. The calculator works out the final purchase price with making and VAT, then what a shop would pay if you sold straight back at the raw gold value minus its deduction, and shows the gap in money and as a share of the purchase price. That share is roughly how far gold must rise for you to break even. It is why people buying gold to save are told to choose plain pieces or bars, and it is also the number to check before selling a piece you bought a few months ago. Expats deciding whether to buy gold before leaving the Gulf can use it to see what the move really costs.',
     faqs: [

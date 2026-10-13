@@ -34,8 +34,8 @@ export default definePage({
   },
   en: {
     slug: 'making-charges', nav: 'Gold making charges', card: 'How making charges work per gram or as a percentage, and which offer is cheaper.',
-    title: 'Gold Making Charges {year}: Per Gram or Percentage, and the Maths',
-    description: 'Gold making charges in Saudi Arabia, the UAE and the Gulf: per gram against percentage, how VAT applies to them, and a calculator comparing two offers on your own piece of jewellery.',
+    title: 'Gold Making Charges {year}: Per Gram or Percentage Compared',
+    description: 'Gold making charges in Saudi Arabia, the UAE and the Gulf: per gram against percentage, how VAT applies to them, and a calculator comparing two shop offers.',
     h1: 'Gold making charges: how they work and how to compare offers',
     resume: 'The making charge is what a buyer pays on top of the raw gold value: the goldsmith’s fee, the design and mould cost and the shop’s margin on the piece. It is quoted in three ways. The first is an amount per gram, the most common in Saudi shops, where the seller names so many riyals a gram. The second is a percentage of the gold value, common in shops selling imported Italian or Indian jewellery. The third is a fixed amount for the piece, used for set and handmade work. The difference between the first two matters: a per-gram charge does not move with the gold price, while a percentage rises with it, so when gold goes up the making charge goes up too. In every case VAT is charged on the making charge along with the gold, {vat.SA} in Saudi Arabia and {vat.AE} in the UAE, so every riyal you knock off the making charge saves you more than a riyal. The calculator compares a per-gram offer with a percentage offer on your own piece and gives the break-even rate between them.',
     faqs: [

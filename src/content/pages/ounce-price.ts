@@ -26,7 +26,7 @@ export default definePage({
   en: {
     slug: 'ounce-price', nav: 'Gold ounce, tola and kilo price', card: 'The ounce in dollars, riyals and dirhams, and tola and kilo converted to grams.',
     title: 'Gold Ounce Price Today {year}: In USD, SAR and AED, Plus Tola',
-    description: 'Gold ounce price now in US dollars, Saudi riyals and UAE dirhams, with troy ounces, tolas and kilos converted to grams and the value of any amount of 24, 22, 21 or 18 karat.',
+    description: 'Gold ounce price now in US dollars, Saudi riyals and UAE dirhams, with ounces, tolas and kilos converted to grams and the value of any amount of gold.',
     h1: 'Gold ounce price today, plus tola and kilo',
     resume: 'The ounce used in gold markets is not the everyday ounce but the troy ounce, which the UK Weights and Measures Act defines as {oz} grams. London and New York price gold in it, and every price on this site starts from it. The ounce is always quoted in dollars: for Saudi riyals multiply by {peg.SA}, for dirhams by {peg.AE}. In the UAE the tola is common too, an old Indian unit of 180 grains, about {tola} grams, and the familiar ten-tola bar is sold by it in Dubai. The kilo is the unit of large trade bars. The calculator converts any amount in ounces, tolas, kilos or grams into grams and gives its current value in any karat and in the currency of the country you choose, before the dealer premium and any VAT. It is a quick way for anyone used to tola quotes back home to check a Dubai bar price.',
     faqs: [

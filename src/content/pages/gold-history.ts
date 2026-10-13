@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'gold-price-history', nav: 'سعر الذهب عبر السنوات', card: 'متوسط الأونصة شهرًا بشهر من البنك الدولي، وقيمة ذهب اشتريته في الماضي.',
     title: 'سعر الذهب عبر السنوات {year}: متوسط الأونصة شهريًا منذ 2016',
-    description: 'سعر الذهب عبر السنوات: متوسط الأونصة الشهري من بيانات البنك الدولي، وكم تساوي اليوم الذهب الذي اشتريته في شهر سابق بالريال السعودي أو الدرهم أو عملة خليجية أخرى.',
+    description: 'سعر الذهب عبر السنوات: متوسط الأونصة الشهري من بيانات البنك الدولي، وكم يساوي اليوم الذهب الذي اشتريته في شهر سابق بالريال السعودي أو الدرهم أو بعملة أخرى.',
     h1: 'سعر الذهب عبر السنوات',
     resume: 'يسأل كثيرون كم كان سعر الذهب قبل سنة أو خمس سنوات، وكم يساوي اليوم ما اشتروه في ذلك الوقت. هذه الصفحة تجيب من مصدر واحد مفتوح: بيانات أسعار السلع الشهرية للبنك الدولي، المعروفة باسم Pink Sheet، والمنشورة برخصة المشاع الإبداعي CC BY 4.0. يعطي البنك متوسط سعر الأونصة بالدولار لكل شهر، ونحن نحوله إلى الريال أو الدرهم أو عملة البلد الذي تختاره، بسعر الصرف نفسه المستعمل في بقية الموقع. الحاسبة تفترض أنك وضعت مبلغًا في ذهب عيار 24 بمتوسط سعر شهر تختاره، دون مصنعية ولا علاوة، ثم تحسب كم غرامًا اشتريت وقيمتها بسعر الأونصة الآن. الجدول تحت الحاسبة يعرض المتوسط السنوي منذ 2016. هذه أرقام ماضية للمقارنة فقط، ولا تعني أن الذهب سيتحرك بالطريقة نفسها في السنوات القادمة.',
     faqs: [
@@ -27,7 +27,7 @@ export default definePage({
   en: {
     slug: 'gold-price-history', nav: 'Gold price history', card: 'The monthly average ounce from the World Bank, and what past gold is worth now.',
     title: 'Gold Price History {year}: Monthly Average Ounce Since 2016',
-    description: 'Gold price history: the World Bank monthly average ounce price, and what gold bought in a past month is worth today in Saudi riyals, UAE dirhams or another Gulf currency.',
+    description: 'Gold price history: the World Bank monthly average ounce price, and what gold bought in a past month is worth today in riyals, dirhams or another Gulf currency.',
     h1: 'Gold price history',
     resume: 'Many people want to know what gold cost a year or five years ago, and what their purchase from back then is worth today. This page answers from one open source: the World Bank monthly commodity price data, known as the Pink Sheet, published under a Creative Commons Attribution 4.0 licence. The bank gives the average dollar price of an ounce for every month, and we convert it to riyals, dirhams or the currency of the country you choose, at the same exchange rates used across the site. The calculator assumes you put an amount into 24K gold at the average price of a month you pick, with no making charge or premium, then works out how many grams you bought and their value at the current ounce price. The table below it shows the yearly average since 2016. These are past figures for comparison only; they do not mean gold will move the same way in the coming years.',
     faqs: [

@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'uae', nav: 'سعر الذهب في الإمارات', card: 'الغرام بالدرهم في دبي وأبوظبي والشارقة، بسعر الربط 3.6725.',
     title: 'سعر الذهب في الإمارات اليوم {year}: غرام 24 و22 و21 بالدرهم',
-    description: 'سعر الذهب في الإمارات الآن بالدرهم: غرام عيار 24 و22 و21 و18 من سعر الأونصة وسعر الربط 3.6725، مع أثر ضريبة 5% واسترداد الضريبة للسياح في دبي.',
+    description: 'سعر الذهب في الإمارات الآن بالدرهم: غرام عيار 24 و22 و21 و18 من سعر الأونصة وسعر الربط 3.6725، مع أثر ضريبة 5% واسترداد الضريبة للسياح في دبي وأبوظبي.',
     h1: 'سعر الذهب في الإمارات اليوم بالدرهم',
     resume: 'سعر غرام الذهب في الإمارات بالدرهم هو سعر الأونصة العالمي بالدولار مضروبًا في {peg.AE}، وهو سعر الدولار مقابل الدرهم في جداول مصرف الإمارات العربية المتحدة المركزي، ومقسومًا على {oz} غرام. لذلك يتحرك السعر في دبي وأبوظبي والشارقة والعين مع الأونصة وحدها. لكن لوحة الأسعار في محلات سوق الذهب بدبي لا تتبع النسبة البسيطة بين العيارات دائمًا: غرام 22 فيها أعلى قليلًا من 22 على 24 من غرام 24، لأن المحل يضيف هامشًا ثابتًا تقريبًا على كل غرام. الحاسبة تعرض قيمة الذهب الخام، ويمكنك مقارنتها بلوحة المحل. عند الشراء تُضاف المصنعية ثم ضريبة القيمة المضافة {vat.AE} على المجموع، بينما تخضع السبائك والعملات الاستثمارية بنقاوة 99% فأكثر لنسبة الصفر، ويستطيع السائح غير المقيم استرداد جزء من الضريبة عند المغادرة.',
     faqs: [
@@ -28,8 +28,8 @@ export default definePage({
   },
   en: {
     slug: 'gold-rate-dubai', nav: 'Gold rate in Dubai and the UAE', card: 'The gram in dirhams in Dubai, Abu Dhabi and Sharjah, at the 3.6725 peg.',
-    title: 'Gold Rate Dubai Today {year}: 24K, 22K, 21K, 18K Per Gram in AED',
-    description: 'Gold rate in Dubai and the UAE now in dirhams: a gram of 24, 22, 21 and 18 karat from the ounce price at the 3.6725 peg, with 5% VAT and the tourist refund explained.',
+    title: 'Gold Rate Dubai Today {year}: 24K, 22K, 21K Per Gram in AED',
+    description: 'Gold rate in Dubai and the UAE now in dirhams: a gram of 24, 22, 21 and 18 karat from the ounce at the 3.6725 peg, with 5% VAT and the tourist refund.',
     h1: 'Gold rate in Dubai and the UAE today',
     resume: 'The gold rate in the UAE is the world ounce price in dollars, times {peg.AE}, the US dollar rate against the dirham in the UAE central bank tables, divided by {oz} grams. So the price in Dubai, Abu Dhabi, Sharjah or Al Ain moves with the ounce alone. The board in a Gold Souk shop does not always follow the simple karat ratio, though: its 22K gram sits a little above 22/24 of its 24K gram, because shops add a roughly fixed amount on every gram. The calculator shows the metal value, which you can set against the board. When you buy jewellery, the shop adds a making charge and then {vat.AE} VAT on the total, while investment bars and coins of 99% purity or more are zero-rated. A visitor who is not resident can claim part of the VAT back at the airport, which matters if you are flying home with a 22K set.',
     faqs: [

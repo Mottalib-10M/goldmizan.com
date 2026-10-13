@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'karat-18', nav: '18K gold price', card: 'A gram of 18K for diamond jewellery and white gold, in riyals and dirhams.',
-    title: '18K Gold Price Today {year}: Per Gram in Saudi Arabia and the Gulf',
-    description: 'The price of a gram of 18 karat gold now in Saudi Arabia, the UAE, Kuwait and the Gulf, three quarters of a pure gram, and why diamond-set 18K pieces carry high making charges.',
+    title: '18K Gold Price Today {year}: Per Gram in Saudi and the Gulf',
+    description: 'A gram of 18 karat gold now in Saudi Arabia, the UAE, Kuwait and the Gulf, three quarters of a pure gram, and why diamond-set 18K pieces cost more to make.',
     h1: '18 karat gold price today',
     resume: 'A gram of 18 karat gold holds 18 parts of pure gold out of 24, exactly 75%, and the remaining quarter is other metals such as copper, silver or, in white gold, palladium. Its gram price is therefore three quarters of the 24K gram price, and pieces are usually stamped 750. It is the karat of diamond and gemstone jewellery and of watches, because it is harder than 21K and 22K and holds a stone well. Those pieces usually carry a high making charge, which on a small, delicate piece can exceed the value of the gold itself, and when you sell, a shop pays for the gold alone. The calculator gives the metal value of any weight of 18K at the current ounce price, in riyals, dirhams or dinars, before making charges and VAT, {vat.SA} in Saudi Arabia or {vat.AE} in the UAE. It is the number to know before an engagement ring purchase or a resale.',
     faqs: [

@@ -6,7 +6,7 @@ export default definePage({
   sources: ['cbuae', 'uaeDecreeLaw', 'goldApi', 'ukWeights'],
   ar: {
     slug: 'karat-22', nav: 'سعر الذهب عيار 22', card: 'غرام عيار 22 الشائع في دبي، بالدرهم والريال وبقية عملات الخليج.',
-    title: 'سعر الذهب عيار 22 اليوم {year}: الغرام في دبي والإمارات والخليج',
+    title: 'سعر الذهب عيار 22 اليوم {year}: الغرام في دبي والخليج',
     description: 'سعر غرام الذهب عيار 22 الآن في الإمارات والسعودية وقطر وعُمان، أي 22 جزءًا من 24 من سعر الغرام الخالص، مع قيمة أي وزن قبل المصنعية وضريبة القيمة المضافة.',
     h1: 'سعر الذهب عيار 22 اليوم',
     resume: 'غرام الذهب عيار 22 يحتوي على 22 جزءًا من الذهب الخالص من أصل 24، أي نحو 91.7%، ولذلك يُحسب سعره بضرب سعر غرام عيار 24 في 22 ثم القسمة على 24. هذا العيار هو المفضل في محلات دبي والشارقة التي تخدم الجاليات القادمة من الهند وباكستان وبنغلاديش، لأن الذهب في تلك البلدان يُشترى تقليديًا بعيار 22، وكثيرًا ما يُختم على القطعة الرقم 916. في الإمارات يُحسب السعر بالدرهم من سعر الأونصة وسعر الربط {peg.AE}، ويضاف عند الشراء أجر المصنعية ثم ضريبة القيمة المضافة {vat.AE} على المجموع. لوحات المحلات في دبي تعرض لعيار 22 سعرًا أعلى قليلًا من النسبة البسيطة، لأن الهامش يُضاف على كل غرام. الحاسبة تعطي قيمة الذهب الخام في أي وزن من عيار 22 الآن، في أي بلد خليجي تختاره.',
@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'karat-22', nav: '22K gold price', card: 'A gram of 22K, the Dubai favourite, in dirhams, riyals and other Gulf currencies.',
-    title: '22K Gold Price Today {year}: Per Gram in Dubai, the UAE and Gulf',
-    description: 'The price of a gram of 22 karat gold now in the UAE, Saudi Arabia, Qatar and Oman, 22 parts in 24 of the pure gram price, with the value of any weight before making and VAT.',
+    title: '22K Gold Price Today {year}: Per Gram in Dubai and the Gulf',
+    description: 'A gram of 22 karat gold now in the UAE, Saudi Arabia, Qatar and Oman, 22 parts in 24 of the pure gram price, with the value of any weight before making and VAT.',
     h1: '22 karat gold price today',
     resume: 'A gram of 22 karat gold holds 22 parts of pure gold out of 24, about 91.7%, so its price is the 24K gram price times 22, divided by 24. It is the karat of choice in Dubai and Sharjah shops serving families from India, Pakistan and Bangladesh, where gold is traditionally bought in 22K, and pieces are often stamped 916. In the UAE the dirham price comes from the ounce price and the {peg.AE} peg; on top of it the shop adds a making charge and then {vat.AE} VAT on the total. Dubai shop boards show a 22K price slightly above the simple ratio, because the margin is added per gram. The calculator gives the metal value of any weight of 22K right now, in whichever Gulf country you pick, so you can see what part of a quote is gold and what part is the shop, before you ask for a discount on the making charge.',
     faqs: [

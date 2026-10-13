@@ -26,8 +26,8 @@ export default definePage({
   },
   en: {
     slug: 'gram-price', nav: 'Gold price per gram', card: 'The gram price for every karat in the six Gulf countries, in one live table.',
-    title: 'Gold Price Per Gram Today {year}: Every Karat in Six Gulf Countries',
-    description: 'Gold price per gram now for 24, 22, 21 and 18 karat in Saudi riyals, dirhams, Kuwaiti dinars, Qatari riyals, Bahraini dinars and Omani rials, from the ounce and exchange rates.',
+    title: 'Gold Price Per Gram Today {year}: Every Karat, Six Gulf States',
+    description: 'Gold price per gram now for 24, 22, 21 and 18 karat in riyals, dirhams and dinars across the six Gulf states, from the live ounce and official exchange rates.',
     h1: 'Gold price per gram today in the Gulf',
     resume: 'The gold price per gram in any Gulf country comes from the same steps: the dollar ounce price, divided by {oz} grams, times the exchange rate of the local currency, times the karat ratio. In Saudi Arabia, the UAE, Bahrain and Oman the exchange rate is a fixed peg announced by the central bank, so once you convert to dollars the gram price is practically the same in all four. In Kuwait the dinar moves slightly because it follows a basket of currencies, and for Qatar we use today’s rate. Saying that gold is cheaper in one Gulf country than another because of the gram price alone therefore makes little sense; the real difference comes from VAT, making charges and shop margins. Pick a country, karat and weight in the calculator, and use the comparison below it to see the same piece priced in the six Gulf currencies at the same moment, VAT included, which is what expats moving between Gulf cities usually want to know.',
     faqs: [

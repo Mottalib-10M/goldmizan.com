@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'zakat-gold', nav: 'حساب زكاة الذهب', card: 'هل بلغ ذهبك النصاب؟ وكم زكاته بالريال وبالغرام هذا الحول.',
     title: 'حساب زكاة الذهب {year}: النصاب وربع العشر بسعر الذهب الآن',
-    description: 'احسب زكاة الذهب بعيار 24 و22 و21 و18: نحوّل ما تملكه إلى ذهب خالص ونقارنه بنصاب عشرين مثقالًا، ثم نحسب ربع العشر بسعر الذهب الآن بالريال أو الدرهم.',
+    description: 'احسب زكاة الذهب بعيار 24 و22 و21 و18: نحوّل ما تملكه إلى ذهب خالص ونقارنه بنصاب عشرين مثقالًا، ثم نحسب ربع العشر بسعر الذهب الآن بالريال أو الدرهم أو الدينار.',
     h1: 'حساب زكاة الذهب بسعر اليوم',
     resume: 'نصاب الذهب عشرون مثقالًا، والزكاة فيه ربع العشر، أي {zakat.rate}، إذا حال عليه الحول، كما في فتوى الشيخ عبد العزيز بن باز المنشورة على موقعه الرسمي. يحوّل كثير من المعاصرين المثقال إلى نحو 4.25 غرام فيصير النصاب {nisab} غرامًا من الذهب الخالص تقريبًا، وتجد تقديرات أخرى، لذلك جعلنا النصاب خانة تستطيع تعديلها. لأن الحلي تكون بعيارات مختلفة، تحوّل الحاسبة كل عيار إلى ذهب خالص: غرام عيار 21 يُحسب 0.875 غرام، وغرام عيار 18 يُحسب 0.75، ثم تجمع الكل وتقارنه بالنصاب، وتحسب الزكاة بسعر الذهب الآن بعملة بلدك، وبالغرام لمن يخرجها ذهبًا. أما زكاة الحلي المعدّ للبس فمسألة خلافية بين العلماء، يرى الشيخ ابن باز وجوبها ويرى آخرون عدمه، والحاسبة لا تفصل في ذلك: أدخل ما تراه داخلًا في الزكاة.',
     faqs: [
@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'zakat-on-gold', nav: 'Zakat on gold calculator', card: 'Has your gold reached the nisab, and how much zakat is due this year?',
-    title: 'Zakat on Gold Calculator {year}: Nisab and 2.5% at Today’s Price',
-    description: 'Work out zakat on 24, 22, 21 and 18 karat gold: your holdings are converted to pure gold, compared with the 20 mithqal nisab, then 2.5% is taken at the current price in your currency.',
+    title: 'Zakat on Gold {year}: Nisab and 2.5% at Today’s Gold Price',
+    description: 'Zakat on 24, 22, 21 and 18 karat gold: holdings converted to pure gold, compared with the 20 mithqal nisab, then 2.5% at the current price in your currency.',
     h1: 'Zakat on gold at today’s price',
     resume: 'The nisab for gold is twenty mithqal, and zakat on it is one fortieth, {zakat.rate}, once a lunar year has passed, as stated in the fatwa of Sheikh Abdulaziz bin Baz published on his official website. Many contemporary scholars convert a mithqal to about 4.25 g, which puts the nisab at roughly {nisab} g of pure gold; other conversions exist, so the nisab is a field you can change. Since jewellery comes in different karats, the calculator turns each karat into pure gold, counting a gram of 21K as 0.875 g and a gram of 18K as 0.75 g, adds it all up, compares it with the nisab, and gives the zakat at the current gold price in your currency, and in grams for those who pay it in gold. Whether zakat is due on jewellery that is worn is a matter of scholarly disagreement: Sheikh Ibn Baz holds that it is due, others hold that it is not. The calculator does not settle that question; enter what you count as zakatable.',
     faqs: [

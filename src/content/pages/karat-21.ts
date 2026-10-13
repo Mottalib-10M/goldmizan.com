@@ -29,7 +29,7 @@ export default definePage({
   en: {
     slug: 'karat-21', nav: '21K gold price', card: 'A gram of 21K in riyals, dirhams and dinars, worked out from the live ounce price.',
     title: '21K Gold Price Today {year}: Per Gram in Saudi Arabia and Gulf',
-    description: 'The price of a gram of 21 karat gold now in Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain and Oman, from the ounce price and official exchange rates, before making charges.',
+    description: 'A gram of 21 karat gold now in Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain and Oman, from the ounce price and official exchange rates, before making charges.',
     h1: '21 karat gold price today',
     resume: 'A gram of 21 karat gold is priced at 87.5% of a gram of 24 karat, because 21 parts in 24 are pure gold. The calculator below takes the world ounce price in US dollars, divides it by {oz} grams, multiplies by the official exchange rate of the country you pick (SAR {peg.SA} to the dollar in Saudi Arabia per the Saudi Central Bank, AED {peg.AE} in the UAE) and then by 21/24. In Saudi gold shops 21K is the everyday karat for bangles, chains and sets, harder than 24K and still a deep yellow, so it is also what most expats in Riyadh or Jeddah end up buying. The figure shown is the metal value only. The shop adds a making charge and then VAT on the whole amount, {vat.SA} in Saudi Arabia, so the price of a piece is always above weight times this gram price. Type the weight of your piece to see what the gold in it is worth now.',
     faqs: [

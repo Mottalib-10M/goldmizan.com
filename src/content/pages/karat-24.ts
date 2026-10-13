@@ -6,7 +6,7 @@ export default definePage({
   sources: ['ukWeights', 'sama', 'cbuae', 'goldApi'],
   ar: {
     slug: 'karat-24', nav: 'سعر الذهب عيار 24', card: 'غرام الذهب الخالص، الأساس الذي تُحسب منه كل العيارات الأخرى.',
-    title: 'سعر الذهب عيار 24 اليوم {year}: غرام الذهب الخالص بالريال والدرهم',
+    title: 'سعر الذهب عيار 24 اليوم {year}: غرام الذهب الخالص في الخليج',
     description: 'سعر غرام الذهب عيار 24 الآن في السعودية والإمارات والخليج، وهو سعر الأونصة مقسومًا على وزنها، مع قيمة السبائك من غرام واحد إلى كيلو قبل علاوة البائع والضريبة.',
     h1: 'سعر الذهب عيار 24 اليوم',
     resume: 'عيار 24 هو الذهب الخالص أو شبه الخالص، بنقاوة 999 من ألف أو أكثر، وسعر غرامه هو الأساس الذي تُحسب منه كل العيارات الأخرى: غرام 22 يساوي 22 جزءًا من 24 منه، وغرام 21 يساوي سبعة أثمانه، وغرام 18 ثلاثة أرباعه. نحسبه بقسمة سعر الأونصة التروي بالدولار على وزنها {oz} غرام، ثم بالضرب في سعر الصرف الرسمي للبلد: {peg.SA} للريال السعودي و{peg.AE} للدرهم الإماراتي. نادرًا ما يُصاغ عيار 24 حليًا لأنه لين يتشوه بسهولة، لذلك يُباع غالبًا سبائك وعملات للادخار، وفي هذه الحالة تحدد قواعد الضريبة الخاصة بالمعادن الاستثمارية ما تدفعه فوق قيمة الذهب، وهي تختلف بين الإمارات والسعودية. الحاسبة تعطي قيمة أي وزن من الذهب الخالص الآن.',
@@ -28,7 +28,7 @@ export default definePage({
   en: {
     slug: 'karat-24', nav: '24K gold price', card: 'A gram of pure gold, the base every other karat is worked out from.',
     title: '24K Gold Price Today {year}: Pure Gold Per Gram in SAR and AED',
-    description: 'The price of a gram of 24 karat gold now in Saudi Arabia, the UAE and the Gulf, the ounce price divided by its weight, with bar values from 1 g to 1 kg before premium and VAT.',
+    description: 'A gram of 24 karat gold now in Saudi Arabia, the UAE and the Gulf, the ounce price divided by its weight, with bar values from 1 g to 1 kg before premium.',
     h1: '24 karat gold price today',
     resume: '24 karat is pure or nearly pure gold, 999 parts per thousand or better, and its gram price is the base for every other karat: a gram of 22 is 22 parts in 24 of it, a gram of 21 seven eighths, a gram of 18 three quarters. We work it out by dividing the dollar price of a troy ounce by its {oz} grams, then multiplying by the country’s official exchange rate, {peg.SA} for the Saudi riyal and {peg.AE} for the UAE dirham. 24K is rarely made into jewellery because it is soft and dents easily, so it is mostly sold as bars and coins for saving. In that case the VAT rules for investment metals decide what you pay on top of the gold, and they differ between the UAE and Saudi Arabia. The calculator gives the current value of any weight of pure gold, from a one-gram bar to a kilo, which is the figure to hold against a dealer quote.',
     faqs: [

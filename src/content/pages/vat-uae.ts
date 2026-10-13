@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'gold-vat-uae', nav: 'ضريبة الذهب في الإمارات', card: 'ضريبة 5% على المجوهرات، وصفر على السبائك الاستثمارية عند كل بيع.',
     title: 'ضريبة الذهب في الإمارات {year}: 5% على المجوهرات وصفر للسبائك',
-    description: 'ضريبة القيمة المضافة على الذهب في الإمارات: 5% على المجوهرات والمصنعية، ونسبة الصفر للسبائك والعملات بنقاوة 99% عند أي بائع، واسترداد الضريبة للسياح عند المغادرة.',
+    description: 'ضريبة القيمة المضافة على الذهب في الإمارات: 5% على المجوهرات والمصنعية، ونسبة الصفر للسبائك والعملات بنقاوة 99% عند أي بائع، واسترداد الضريبة للسياح بعد ذلك.',
     h1: 'ضريبة القيمة المضافة على الذهب في الإمارات',
     resume: 'تفرض الإمارات ضريبة القيمة المضافة بنسبة {vat.AE} بحسب المادة الثالثة من المرسوم بقانون اتحادي رقم 8 لسنة 2017، وتنطبق على المجوهرات الذهبية بقيمة الذهب والمصنعية معًا. أما المعادن الثمينة الاستثمارية فتخضع لنسبة الصفر بحسب المادة 36 من اللائحة التنفيذية، وهي الذهب والفضة والبلاتين بنقاوة 99% فأكثر وبشكل قابل للتداول في أسواق السبائك العالمية. القاعدة الإماراتية تشمل التوريد والاستيراد معًا، ولا تشترط أن يكون البائع هو المصفاة، فالسبيكة المؤهلة بلا ضريبة عند أي محل في دبي أو أبوظبي، وهذا فرق جوهري مع السعودية. ويستطيع السائح غير المقيم أن يسترد ضريبة المجوهرات عند المغادرة بعد خصم الرسوم. الحاسبة تبين الضريبة على قطعة عيار 22، الأشيع في دبي، مقسومة بين جزء الذهب وجزء المصنعية، بسعر الأونصة الآن وسعر الربط {peg.AE}.',
     faqs: [
@@ -33,8 +33,8 @@ export default definePage({
   },
   en: {
     slug: 'gold-vat-uae', nav: 'VAT on gold in the UAE', card: '5% VAT on jewellery, zero on investment bars whoever sells them.',
-    title: 'VAT on Gold in the UAE {year}: 5% on Jewellery, Zero on Gold Bars',
-    description: 'VAT on gold in the UAE: 5% on jewellery and making charges, a zero rate on bars and coins of 99% purity from any seller, and the tourist refund at departure, with a calculator.',
+    title: 'VAT on Gold UAE {year}: 5% on Jewellery, Zero on Gold Bars',
+    description: 'VAT on gold in the UAE: 5% on jewellery and making charges, zero on bars and coins of 99% purity from any seller, and the tourist refund when you fly out.',
     h1: 'VAT on gold in the UAE',
     resume: 'The UAE charges VAT at {vat.AE} under Article 3 of Federal Decree-Law No. 8 of 2017, and it applies to gold jewellery on the gold and the making charge together. Investment precious metals are zero-rated under Article 36 of the Executive Regulation: gold, silver and platinum of 99% purity or more, in a form tradeable in global bullion markets. The UAE rule covers both supply and import and does not require the seller to be the refiner, so a qualifying bar carries no VAT at any shop in Dubai or Abu Dhabi, a real difference from Saudi Arabia. A non-resident tourist can reclaim the VAT on jewellery at departure, less fees. The calculator shows the VAT on a piece of 22K, the most common karat in Dubai, split between the gold and the making charge, at the current ounce price and the {peg.AE} peg. It is the page to read before a big jewellery purchase if you live in the Emirates, since residents get none of it back.',
     faqs: [

@@ -26,7 +26,7 @@ export default definePage({
   en: {
     slug: 'karat-converter', nav: 'Gold karat converter', card: 'What a weight of 21K or 18K equals in pure gold or in another karat.',
     title: 'Gold Karat Converter {year}: 21K to 24K, 18K to 21K in Grams',
-    description: 'Convert a gold weight from one karat to another: how many grams of 24K are in a 21K or 18K piece, what it equals in 22K, and its current value in riyals, dirhams or dinars.',
+    description: 'Convert gold from one karat to another: grams of 24K in a 21K or 18K piece, what it equals in 22K, and its current value in riyals, dirhams or dinars.',
     h1: 'Gold karat converter',
     resume: 'Every karat is a share of pure gold in twenty-fourths: 21K is 21 parts in 24, 18K is 18 parts. Any weight can therefore be converted from one karat to another with one rule: multiply the weight by the original karat and divide by the target karat. Twenty-one grams of 21K hold 18.375 g of pure gold, the same as 18.375 g of 24K, about 20 g of 22K or 24.5 g of 18K. The conversion helps when adding up jewellery in several karats for zakat, when comparing a bar with a piece, or when trading a piece for one in a different karat. The calculator gives the equivalent weight, the pure gold in the piece and its current value in the currency of the Gulf country you choose. It is also handy for expats whose family jewellery is 22K from India and who are now quoted 21K prices in Saudi Arabia.',
     faqs: [

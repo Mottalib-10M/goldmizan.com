@@ -6,8 +6,8 @@ export default definePage({
   sources: ['uaeTourist', 'uaeExecReg', 'uaeDecreeLaw'],
   ar: {
     slug: 'tourist-refund', nav: 'استرداد ضريبة الذهب للسياح في الإمارات', card: 'كم تسترد من ضريبة الذهب عند مغادرة الإمارات، بعد الرسوم.',
-    title: 'استرداد ضريبة الذهب للسياح في الإمارات {year}: احسب المبلغ الصافي',
-    description: 'احسب ما يسترده السائح من ضريبة القيمة المضافة على الذهب عند مغادرة الإمارات: 5% من السعر، ناقص 13% منها و4.8 درهم لكل طلب، بشرط 250 درهمًا على الأقل.',
+    title: 'استرداد ضريبة الذهب للسياح في الإمارات {year}: المبلغ الصافي',
+    description: 'احسب ما يسترده السائح من ضريبة القيمة المضافة على الذهب عند مغادرة الإمارات: 5% من السعر، ناقص 13% منها و4.8 درهم لكل طلب، بشرط شراء 250 درهمًا على الأقل.',
     h1: 'استرداد ضريبة الذهب للسياح في الإمارات',
     resume: 'نظام استرداد الضريبة للسياح في الإمارات يعيد للزائر غير المقيم جزءًا من ضريبة القيمة المضافة التي دفعها على مشترياته، ومنها المجوهرات الذهبية، عند مغادرته الدولة. بحسب قرار الهيئة الاتحادية للضرائب رقم 2 لسنة 2018 وتعديلاته، يجب أن تبلغ قيمة المشتريات شاملة الضريبة {tourist.min} درهم على الأقل من البائع نفسه، وأن تخرج البضاعة مع السائح خلال {tourist.days} يومًا من تاريخ الشراء، ولا يُصدر البائع المستند لمن هو دون الثامنة عشرة. يخصم النظام رسمًا إداريًا قدره {tourist.fee} من مبلغ الضريبة المسترد، ورسمًا ثابتًا قدره {tourist.fixed} درهم عن كل طلب، ولا يتجاوز الاسترداد النقدي {tourist.cap} درهم للسائح في 24 ساعة. الحاسبة تحسب الضريبة المتضمنة في السعر، والرسوم، والمبلغ الصافي الذي تتوقع استرداده، فتعرف قيمة القطعة الحقيقية بعد العودة.',
     faqs: [
@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'uae-tourist-vat-refund', nav: 'UAE tourist VAT refund on gold', card: 'What you get back of the VAT on gold when leaving the UAE, after fees.',
-    title: 'UAE Tourist VAT Refund on Gold {year}: Work Out the Net Amount',
-    description: 'Work out the VAT a tourist gets back on gold when leaving the UAE: 5% of the price, less 13% of it and AED 4.8 per claim, on purchases of at least AED 250 from one retailer.',
+    title: 'Tourist VAT Refund on Gold UAE {year}: Work Out the Net Sum',
+    description: 'The VAT a tourist gets back on gold when leaving the UAE: 5% of the price, less 13% of it and AED 4.8 per claim, on at least AED 250 from one retailer.',
     h1: 'UAE tourist VAT refund on gold',
     resume: 'The UAE Tax Refunds for Tourists Scheme gives a non-resident visitor part of the VAT back on purchases, gold jewellery included, when leaving the country. Under Federal Tax Authority Decision No. 2 of 2018 as amended, purchases including VAT must reach AED {tourist.min} from the same retailer, the goods must leave with the tourist within {tourist.days} days of purchase, and no refund form may be issued to anyone under eighteen. The scheme keeps an administrative fee of {tourist.fee} of the VAT refunded and a fixed fee of AED {tourist.fixed} per claim, and cash refunds are capped at AED {tourist.cap} per tourist in 24 hours. The calculator extracts the VAT contained in the price, deducts the fees and gives the net amount you can expect back, so you know what the piece really cost once you are home. Visitors buying 22K sets before a wedding often forget the fee, which this makes visible.',
     faqs: [

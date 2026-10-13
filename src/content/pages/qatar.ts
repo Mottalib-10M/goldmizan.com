@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'qatar', nav: 'سعر الذهب في قطر', card: 'الغرام بالريال القطري لكل عيار، من الأونصة وسعر صرف اليوم.',
     title: 'سعر الذهب في قطر اليوم {year}: غرام 24 و22 و21 بالريال القطري',
-    description: 'سعر غرام الذهب في قطر الآن بالريال القطري لعيار 24 و22 و21 و18، من سعر الأونصة وسعر صرف الريال اليوم، مع حساب قيمة أي وزن قبل المصنعية في الدوحة.',
+    description: 'سعر غرام الذهب في قطر الآن بالريال القطري لعيار 24 و22 و21 و18، من سعر الأونصة وسعر صرف الريال اليوم، مع حساب قيمة أي وزن قبل المصنعية في محلات الدوحة.',
     h1: 'سعر الذهب في قطر اليوم بالريال القطري',
     resume: 'في قطر يُحسب سعر غرام الذهب بالريال القطري من سعر الأونصة بالدولار وسعر صرف الريال، ثم يُقسم على {oz} غرام ويُضرب في نسبة العيار. الريال القطري قريب جدًا من سعر ثابت مقابل الدولار، لكننا لم نجد على موقع مصرف قطر المركزي صفحة قابلة للقراءة تنشر هذا الرقم، فلا نكتبه كسعر ربط رسمي. بدلًا من ذلك نأخذ سعر اليوم من ExchangeRate-API، ونحتفظ برقم احتياطي من الجدول الرسمي لمصرف الإمارات المركزي، وهو {peg.QA} ريال للدولار في آخر يوم من الجدول. قطر لا تطبق ضريبة قيمة مضافة على المجوهرات حتى تاريخ مراجعتنا، فالفاتورة تتكون من الذهب والمصنعية. محلات الدوحة تبيع عيار 22 و21 و18 جنبًا إلى جنب، والحاسبة تعطي قيمة الذهب الخام لأي منها بحسب الوزن الذي تكتبه.',
     faqs: [
@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'qatar', nav: 'Gold price in Qatar', card: 'The gram in Qatari riyals for every karat, from the ounce and today’s rate.',
-    title: 'Gold Price in Qatar Today {year}: 24K, 22K, 21K in Qatari Riyals',
-    description: 'Gold price in Qatar now in Qatari riyals for 24, 22, 21 and 18 karat, from the ounce price and today’s riyal rate, with the metal value of any weight before making charges.',
+    title: 'Gold Price in Qatar Today {year}: 24K, 22K, 21K in Riyals',
+    description: 'Gold price in Qatar now in Qatari riyals for 24, 22, 21 and 18 karat, from the ounce and today’s riyal rate, with the metal value of any weight in Doha.',
     h1: 'Gold price in Qatar today, in Qatari riyals',
     resume: 'In Qatar the riyal price of a gram of gold comes from the dollar ounce price and the riyal exchange rate, divided by {oz} grams and multiplied by the karat ratio. The Qatari riyal trades very close to a fixed dollar rate, but we could not find a readable page on the Qatar Central Bank website publishing that figure, so we do not present one as an official peg. Instead we take today’s rate from ExchangeRate-API and keep a fallback from the UAE central bank official table, {peg.QA} riyals per dollar on the last day listed. Qatar applies no VAT on jewellery as of our last review, so an invoice is gold plus making charge. Doha shops sell 22K, 21K and 18K side by side, and the calculator gives the metal value of whichever you pick for the weight you type, which is handy for expats used to quotes in another currency.',
     faqs: [

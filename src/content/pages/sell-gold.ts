@@ -26,7 +26,7 @@ export default definePage({
   en: {
     slug: 'sell-used-gold', nav: 'Selling used gold', card: 'What a shop pays for your used gold, and how much it deducts.',
     title: 'Sell Used Gold {year}: What a Gulf Shop Should Pay You Today',
-    description: 'Work out the selling price of used gold in Saudi Arabia, the UAE and the Gulf: the raw gold value by weight and karat minus the shop deduction, against the offer you were given.',
+    description: 'Selling used gold in Saudi Arabia, the UAE and the Gulf: the raw gold value by weight and karat minus the shop deduction, set against the offer you got.',
     h1: 'Selling used gold: what should the shop pay?',
     resume: 'When you sell used gold, a shop does not pay for the piece as you bought it but for the gold inside it: the weight times the gram price for its karat on the day of sale, minus a deduction some sellers call a melting, refining or testing fee. The making charge you paid and the VAT do not come back. The right question before going to a shop is therefore what those grams are worth today at the raw gold price. The calculator answers it at the current ounce price and the country’s official exchange rate, lets you enter the deduction the shop names, or the gram price it offered, and shows the gap between that offer and the gold value as a percentage. Bring the original invoice if you have it, since it proves weight and karat and makes haggling easier, and ask for the piece to be weighed in front of you on a visible scale. It helps anyone clearing out jewellery before leaving the Gulf.',
     faqs: [

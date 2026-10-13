@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'saudi-arabia', nav: 'سعر الذهب في السعودية', card: 'الغرام بالريال لكل عيار، بسعر الصرف الرسمي 3.75 للدولار.',
     title: 'سعر الذهب في السعودية اليوم {year}: غرام 24 و21 و18 بالريال',
-    description: 'سعر الذهب في السعودية الآن بالريال: غرام عيار 24 و22 و21 و18 محسوب من سعر الأونصة وسعر صرف البنك المركزي السعودي، مع ما تضيفه المصنعية وضريبة 15%.',
+    description: 'سعر الذهب في السعودية الآن بالريال: غرام عيار 24 و22 و21 و18 محسوب من سعر الأونصة وسعر صرف البنك المركزي السعودي، مع ما تضيفه المصنعية وضريبة 15% عليها.',
     h1: 'سعر الذهب في السعودية اليوم بالريال',
     resume: 'في السعودية يُحسب سعر غرام الذهب بالريال من سعر الأونصة العالمي بالدولار مضروبًا في {peg.SA}، وهو سعر الصرف الذي يلتزم به البنك المركزي السعودي منذ عقود، ومقسومًا على {oz} غرام، أي وزن الأونصة التروي. لأن الريال مربوط بالدولار، لا يتغير سعر الذهب في الرياض أو جدة أو الدمام إلا بتغير الأونصة نفسها، فالسعر واحد في كل مدن المملكة قبل هامش المحل. غرام عيار 21، وهو الأكثر تداولًا في المحلات السعودية، يساوي سبعة أثمان غرام عيار 24، وغرام عيار 18 ثلاثة أرباعه. عند الشراء تُضاف المصنعية ثم ضريبة القيمة المضافة بنسبة {vat.SA} على مجموع الذهب والمصنعية، وفق نظام ضريبة القيمة المضافة. الحاسبة تعرض قيمة الذهب الخام لأي وزن، وتُحدَّث كل خمس دقائق ما دامت الصفحة مفتوحة.',
     faqs: [
@@ -29,7 +29,7 @@ export default definePage({
   en: {
     slug: 'saudi-arabia', nav: 'Gold price in Saudi Arabia', card: 'The gram in riyals for every karat, at the official rate of 3.75 to the dollar.',
     title: 'Gold Price in Saudi Arabia Today {year}: 24K, 21K, 18K in SAR',
-    description: 'Gold price in Saudi Arabia now in riyals: a gram of 24, 22, 21 and 18 karat from the ounce price and the Saudi Central Bank rate, plus what making charges and 15% VAT add.',
+    description: 'Gold price in Saudi Arabia now in riyals: a gram of 24, 22, 21 and 18 karat from the ounce and the Saudi Central Bank rate, plus what making and 15% VAT add.',
     h1: 'Gold price in Saudi Arabia today, in riyals',
     resume: 'In Saudi Arabia the riyal price of a gram of gold is the world ounce price in dollars, times {peg.SA}, the official exchange rate the Saudi Central Bank has held for decades, divided by {oz} grams, the weight of a troy ounce. Because the riyal is pegged, gold costs the same in Riyadh, Jeddah, Dammam or Khobar before a shop adds its margin, and it moves only when the ounce moves. A gram of 21 karat, the karat most Saudi shops sell, is seven eighths of a gram of 24; a gram of 18 is three quarters. When you buy a piece, the shop adds a making charge and then VAT at {vat.SA} on gold and making together, under the VAT Law. The calculator shows the metal value for any weight and refreshes every five minutes while the page is open, so expats comparing shops in the souq can check a quote on the spot.',
     faqs: [

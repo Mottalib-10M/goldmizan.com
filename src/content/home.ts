@@ -9,7 +9,7 @@ interface HomeText { title: string; description: string; h1: string; lead: strin
 
 export const HOME: Record<'ar' | 'en', HomeText> = {
   ar: {
-    title: 'سعر الذهب اليوم {year}: غرام 24 و22 و21 و18 في السعودية والخليج',
+    title: 'سعر الذهب اليوم {year}: غرام 24 و22 و21 و18 في السعودية',
     description: 'سعر الذهب اليوم محسوب أمامك من سعر الأونصة الآن: غرام عيار 24 و22 و21 و18 بالريال والدرهم والدينار، وسعر القطعة النهائي بالمصنعية وضريبة القيمة المضافة لكل بلد.',
     h1: 'سعر الذهب اليوم في السعودية والخليج',
     lead: 'اختر البلد والعيار والوزن: السعر يُحسب الآن من سعر الأونصة وسعر الصرف الرسمي، مع وقت آخر تحديث.',
@@ -45,8 +45,8 @@ export const HOME: Record<'ar' | 'en', HomeText> = {
 <p>الموقع تنشره Radif Partners، وهي جهة نشر مستقلة لا تبيع الذهب ولا تتلقى عمولة من أي محل. كل رقم في الموقع يأتي إما من سعر الأونصة الذي نجلبه من ${h.src('goldApi', 'gold-api.com')}، وإما من نص رسمي مذكور بالاسم والرابط. طريقة الحساب كاملة، مع حدودها، في ${h.a('method', 'صفحة طريقة الحساب')}، ومن نحن ولماذا أنشأنا الموقع في ${h.a('about', 'صفحة من نحن')}. ما يميز الموقع عن الصفحة الأولى في نتائج البحث أنه يحسب السعر أمامك الآن وبضريبة بلدك، بدل مقال كُتب قبل أسابيع.</p>`,
   },
   en: {
-    title: 'Gold Rate Today {year}: 24K, 22K, 21K, 18K in Dubai, UAE and Saudi',
-    description: 'Gold rate today worked out in front of you from the live ounce price: a gram of 24, 22, 21 and 18 karat in dirhams, riyals and dinars, and a piece’s final price with making and VAT.',
+    title: 'Gold Rate Today {year}: 24K, 22K, 21K, 18K in Dubai and Saudi',
+    description: 'Gold rate today from the live ounce price: a gram of 24, 22, 21 and 18 karat in dirhams, riyals and dinars, plus a piece’s final price with making and VAT.',
     h1: 'Gold rate today in the UAE, Saudi Arabia and the Gulf',
     lead: 'Pick a country, karat and weight: the price is worked out now from the ounce price and the official exchange rate, with the time of the last update.',
     resume: 'The gold rate today in the UAE, Saudi Arabia and the rest of the Gulf does not need a news article: the world ounce price in dollars and the local exchange rate are enough. We divide the ounce price by {oz} grams, the weight of a troy ounce, to get a gram of pure gold in dollars, then multiply by the rate the central bank announces: AED {peg.AE} per dollar in the UAE, SAR {peg.SA} in Saudi Arabia, BHD {peg.BH} in Bahrain, USD {peg.OMusd} per rial in Oman, and today’s rate for the Kuwaiti dinar and the Qatari riyal. Then we multiply by the karat ratio, 22, 21 or 18 over 24. The figures on this page refresh every five minutes while it is open, and the time of the last ounce price is shown under the calculator. This is the raw gold value before the shop margin, the making charge and VAT, which is {vat.AE} in the UAE and {vat.SA} in Saudi Arabia; each has its own calculator on the site. If you live in Dubai or Riyadh and want to know what a gram really costs before walking into the souq, start here.',

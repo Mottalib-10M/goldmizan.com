@@ -6,7 +6,7 @@ export default definePage({
   sources: ['ksaVatLaw', 'uaeDecreeLaw', 'nbrRate', 'omanVatLaw', 'cbuaeFx'],
   ar: {
     slug: 'compare-countries', nav: 'أين الذهب أرخص في الخليج؟', card: 'القطعة نفسها في دول الخليج الست، بالضريبة، مرتبة من الأرخص.',
-    title: 'أين الذهب أرخص في الخليج {year}؟ مقارنة 6 دول شاملة الضريبة',
+    title: 'الذهب الأرخص في الخليج {year}: مقارنة 6 دول شاملة الضريبة',
     description: 'قارن سعر قطعة الذهب نفسها في السعودية والإمارات والكويت وقطر والبحرين وعُمان، بالمصنعية نفسها وضريبة كل بلد، مرتبة من الأرخص إلى الأغلى بالدولار وبعملة كل دولة.',
     h1: 'أين الذهب أرخص في الخليج؟',
     resume: 'سعر الذهب الخام شبه متطابق في دول الخليج الست إذا حوّلته إلى الدولار، لأن أربع عملات منها مربوطة بالدولار بسعر ثابت، والدينار الكويتي والريال القطري قريبان منه. ما يصنع الفرق في سعر القطعة النهائي أمران: الضريبة والمصنعية. الضريبة معروفة: صفر في الكويت وقطر حتى تاريخ مراجعتنا، و{vat.AE} في الإمارات، و{vat.OM} في عُمان، و{vat.BH} في البحرين، و{vat.SA} في السعودية، وتُحسب على الذهب والمصنعية معًا. المصنعية تختلف من محل إلى آخر داخل البلد الواحد أكثر مما تختلف بين البلدان. لذلك تضع الحاسبة نسبة مصنعية واحدة في البلدان الست، فيظهر أثر الضريبة وحده، وترتب البلدان من الأرخص إلى الأغلى بالدولار. غيّر الوزن والعيار ونسبة المصنعية لترى كم توفر فعلًا إن اشتريت في بلد آخر، قبل حساب تكلفة السفر.',
@@ -25,8 +25,8 @@ export default definePage({
   },
   en: {
     slug: 'cheapest-gold-gulf', nav: 'Where is gold cheapest in the Gulf?', card: 'The same piece in the six Gulf countries, VAT included, cheapest first.',
-    title: 'Where Is Gold Cheapest in the Gulf {year}? Six Countries With VAT',
-    description: 'Compare the price of the same gold piece in Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain and Oman, with one making charge and each country’s VAT, ranked cheapest first in US dollars.',
+    title: 'Cheapest Gold in the Gulf {year}: Six Countries With VAT',
+    description: 'The same gold piece priced in Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain and Oman, with one making charge and each country’s VAT, ranked cheapest first.',
     h1: 'Where is gold cheapest in the Gulf?',
     resume: 'The raw gold price is practically the same in the six Gulf countries once converted to dollars, because four of their currencies are pegged to the dollar at a fixed rate and the Kuwaiti dinar and Qatari riyal stay close to it. Two things make the difference on the final price of a piece: VAT and the making charge. VAT is known: zero in Kuwait and Qatar as of our last review, {vat.AE} in the UAE, {vat.OM} in Oman, {vat.BH} in Bahrain and {vat.SA} in Saudi Arabia, charged on gold and making together. The making charge varies more between shops in one country than between countries. The calculator therefore applies one making percentage everywhere, so VAT alone shows, and ranks the countries from cheapest to dearest in dollars. Change weight, karat and making rate to see how much you would really save by buying elsewhere, before counting the cost of the trip. It answers a question expats moving around the Gulf ask all the time.',
     faqs: [

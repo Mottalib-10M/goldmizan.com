@@ -6,7 +6,7 @@ export default definePage({
   sources: ['ksaVatLaw', 'ksaVatRegs', 'sama', 'goldApi'],
   ar: {
     slug: 'gold-vat-saudi', nav: 'ضريبة الذهب في السعودية', card: 'ضريبة 15% على الذهب والمصنعية، ونسبة الصفر للسبائك عند أول توريد فقط.',
-    title: 'ضريبة الذهب في السعودية {year}: 15% على المشغولات وقاعدة السبائك',
+    title: 'ضريبة الذهب في السعودية {year}: 15% على المشغولات والسبائك',
     description: 'ضريبة القيمة المضافة على الذهب في السعودية: 15% على قيمة المشغولات والمصنعية، ونسبة الصفر للمعادن الاستثمارية في أول توريد من المنتج أو المصفاة فقط، بالأمثلة.',
     h1: 'ضريبة القيمة المضافة على الذهب في السعودية',
     resume: 'تخضع المشغولات الذهبية في السعودية لضريبة القيمة المضافة بالنسبة الأساسية {vat.SA}، كما تنص المادة الثانية من نظام ضريبة القيمة المضافة، وتُحسب على قيمة التوريد كاملة: الذهب والمصنعية معًا. يختلف الأمر في المعادن الاستثمارية، أي الذهب والفضة والبلاتين بنقاوة لا تقل عن 99% وقابلة للتداول في سوق السبائك العالمية: تنص المادة 36 من اللائحة التنفيذية على أن أول توريد لها يقوم به منتج المعدن أو مصفّيه يخضع لنسبة الصفر. النص لا يمد نسبة الصفر إلى البيع التالي، كبيع محل التجزئة لسبيكة اشتراها من المصفاة، وهذا قيد يغفله كثير من المقالات التي تكتب أن السبائك معفاة في السعودية من دون شروط. الحاسبة تعرض الضريبة على قطعتك مقسومة بين جزء الذهب وجزء المصنعية، لترى أين يذهب المبلغ. ولأن الريال مربوط بالدولار عند {peg.SA}، تتبع قيمة الذهب وضريبته سعر الأونصة وحده.',
@@ -34,8 +34,8 @@ export default definePage({
   },
   en: {
     slug: 'gold-vat-saudi-arabia', nav: 'VAT on gold in Saudi Arabia', card: '15% VAT on gold and making, and a zero rate for bars on the first supply only.',
-    title: 'VAT on Gold in Saudi Arabia {year}: 15% on Jewellery, Bar Rules',
-    description: 'VAT on gold in Saudi Arabia: 15% on the value of jewellery including making charges, and a zero rate for investment metals only on the first supply by a producer or refiner, with examples.',
+    title: 'VAT on Gold Saudi Arabia {year}: 15% on Jewellery, Bar Rules',
+    description: 'VAT on gold in Saudi Arabia: 15% on jewellery including making charges, and a zero rate for investment bars only on the first supply by a producer or refiner.',
     h1: 'VAT on gold in Saudi Arabia',
     resume: 'Gold jewellery in Saudi Arabia carries VAT at the basic rate of {vat.SA}, under Article 2 of the VAT Law, on the full value of the supply: gold and making charge together. Investment metals are different. For gold, silver and platinum at least 99% pure and tradeable on the world bullion market, Article 36 of the Implementing Regulations zero-rates the first supply made by the metal’s producer or refiner. The text does not extend the zero rate to a later sale, such as a retail shop selling a bar it bought from a refinery, a condition many articles leave out when they say bars are simply exempt in Saudi Arabia. The calculator shows the VAT on your piece split between the gold and the making charge, so you can see where the money goes. Because the riyal is pegged to the dollar at {peg.SA}, the gold value and its VAT follow the ounce price alone. For expats used to buying gold VAT-free elsewhere, this is the line on the invoice that surprises most.',
     faqs: [

@@ -26,7 +26,7 @@ export default definePage({
   en: {
     slug: 'kuwait', nav: 'Gold price in Kuwait', card: 'The gram in Kuwaiti dinars, at today’s rate, since the dinar follows a basket.',
     title: 'Gold Price in Kuwait Today {year}: 24K, 21K and 18K in Dinars',
-    description: 'Gold price in Kuwait now in dinars for 24, 22, 21 and 18 karat, from the ounce price and today’s dinar rate, since the dinar is pegged to a basket, not to the dollar alone.',
+    description: 'Gold price in Kuwait now in dinars for 24, 22, 21 and 18 karat, from the ounce and today’s dinar rate, since the dinar follows a basket, not the dollar.',
     h1: 'Gold price in Kuwait today, in dinars',
     resume: 'Kuwait works differently from its neighbours: the dinar is not pegged to the dollar alone but to a basket of currencies set by the Central Bank of Kuwait, so its dollar rate shifts slightly from day to day. The dinar price of gold therefore depends on two things, the dollar ounce price and the dinar exchange rate. The calculator takes today’s dinar rate from ExchangeRate-API and, if that fails, falls back on the last figure published by the UAE central bank in its monthly table, {peg.KW} dinars to the dollar. Because the dinar is a large unit, the gram is quoted to three decimals, in fils. Kuwait applies no VAT on jewellery as of our last review, so the final price of a piece is gold plus making charge. Enter the weight and karat of your piece to see the metal value in dinars, which is a useful check before haggling in the souq.',
     faqs: [

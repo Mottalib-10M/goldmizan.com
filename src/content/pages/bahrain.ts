@@ -26,7 +26,7 @@ export default definePage({
   en: {
     slug: 'bahrain', nav: 'Gold price in Bahrain', card: 'The gram in Bahraini dinars, at the 0.376 peg, with 10% VAT.',
     title: 'Gold Price in Bahrain Today {year}: 24K, 21K and 18K in Dinars',
-    description: 'Gold price in Bahrain now in Bahraini dinars for 24, 22, 21 and 18 karat, at the 0.376 dollar peg, with the effect of 10% VAT on the final price of a piece of jewellery.',
+    description: 'Gold price in Bahrain now in Bahraini dinars for 24, 22, 21 and 18 karat, at the 0.376 dollar peg, with the effect of 10% VAT on the final price of a piece.',
     h1: 'Gold price in Bahrain today, in dinars',
     resume: 'The dinar price of a gram of gold in Bahrain is the dollar ounce price times {peg.BH}, the peg stated by the Central Bank of Bahrain, divided by {oz} grams and multiplied by the karat ratio. The central bank says the peg has been effectively unchanged since 1980, so gold in Manama moves with the ounce alone. What sets Bahrain apart is VAT: the National Bureau for Revenue raised the standard rate to {vat.BH} from 1 January 2022, twice the rate in the UAE and Oman. On a piece with 500 dinars of gold and making, VAT adds a tenth of that amount. We did not find the investment gold rules in the bureau pages we read, so we do not apply a zero rate to bars in Bahrain; the calculators use the standard rate and say so. The calculator gives the metal value in dinars for any weight and karat, useful for residents who also shop in Khobar or Dubai.',
     faqs: [

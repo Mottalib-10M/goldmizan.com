@@ -6,7 +6,7 @@ export default definePage({
   sources: ['ksaVatLaw', 'uaeDecreeLaw', 'nbrRate', 'omanVatLaw', 'goldApi'],
   ar: {
     slug: 'jewellery-price', nav: 'حساب سعر الذهب مع المصنعية', card: 'سعر القطعة النهائي: الذهب والمصنعية وضريبة القيمة المضافة لكل بلد.',
-    title: 'حساب سعر الذهب مع المصنعية والضريبة {year}: السعر النهائي للقطعة',
+    title: 'حساب سعر الذهب مع المصنعية والضريبة {year}: سعر القطعة',
     description: 'احسب سعر قطعة الذهب النهائي مع المصنعية وضريبة القيمة المضافة: 15% في السعودية و5% في الإمارات وعُمان و10% في البحرين، بالوزن والعيار وسعر الغرام الآن.',
     h1: 'حساب سعر الذهب مع المصنعية والضريبة',
     resume: 'السعر النهائي لقطعة الذهب يتكون من ثلاثة أجزاء: قيمة الذهب، وهي الوزن مضروبًا في سعر غرام العيار، ثم المصنعية التي يحددها المحل للغرام أو كنسبة من قيمة الذهب أو مبلغًا ثابتًا للقطعة، ثم ضريبة القيمة المضافة على مجموع الاثنين. الضريبة تختلف بحسب البلد: {vat.SA} في السعودية، و{vat.AE} في الإمارات، و{vat.BH} في البحرين، و{vat.OM} في عُمان، وصفر في الكويت وقطر حتى تاريخ مراجعتنا. الحاسبة تأخذ سعر غرام عيار 24 من سعر الأونصة الآن، ويمكنك أن تستبدل به سعر لوحة المحل الذي أمامك إن أردت أن يطابق الحساب فاتورته. اكتب الوزن والعيار والمصنعية، فترى السعر النهائي، وسعر الغرام شاملًا كل شيء، ونصيب كل بند من المبلغ. بهذا تعرف قبل الدفع إن كان العرض معقولًا، وتقارن بين محلين على أساس واحد.',
@@ -27,7 +27,7 @@ export default definePage({
   en: {
     slug: 'jewellery-price', nav: 'Jewellery price with making charges', card: 'The final price of a piece: gold, making charge and each country’s VAT.',
     title: 'Gold Jewellery Price Calculator {year}: Making Charges and VAT',
-    description: 'Work out the final price of a gold piece with making charges and VAT: 15% in Saudi Arabia, 5% in the UAE and Oman, 10% in Bahrain, from weight, karat and the live gram price.',
+    description: 'Final price of a gold piece with making charges and VAT: 15% in Saudi Arabia, 5% in the UAE and Oman, 10% in Bahrain, from weight, karat and the live price.',
     h1: 'Gold jewellery price with making charges and VAT',
     resume: 'The final price of a gold piece has three parts: the gold value, which is the weight times the gram price for its karat; the making charge, which the shop sets per gram, as a percentage of the gold value or as a fixed amount for the piece; and VAT on the two together. VAT depends on the country: {vat.SA} in Saudi Arabia, {vat.AE} in the UAE, {vat.BH} in Bahrain, {vat.OM} in Oman and zero in Kuwait and Qatar as of our last review. The calculator takes the 24K gram price from the current ounce price, and you can replace it with the board price of the shop in front of you if you want the result to match its invoice. Enter weight, karat and making charge to see the final price, the all-in price per gram and the share of each line. You will know before paying whether the offer is reasonable and can compare two shops on the same basis, which is hard to do from memory in a busy souq.',
     faqs: [

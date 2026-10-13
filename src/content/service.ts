@@ -15,7 +15,7 @@ const host = `${LEGAL.hosting.name}, ${LEGAL.hosting.address}`;
 export const SERVICE: Record<Id, { ar: ServiceText; en: ServiceText }> = {
   about: {
     ar: {
-      title: 'من نحن: ميزان الذهب، حاسبات سعر الذهب في الخليج من Radif Partners',
+      title: 'ميزان الذهب من Radif Partners: من نحن ولماذا أنشأنا الموقع',
       description: 'من ينشر ميزان الذهب، ولماذا أنشأناه، وكيف نحسب سعر الذهب في السعودية والإمارات والخليج، وكيف يُموَّل الموقع، وكيف تبلغنا عن خطأ في رقم أو في نص قانوني تجده.',
       h1: 'من نحن',
       body: (h) => `
@@ -30,8 +30,8 @@ export const SERVICE: Record<Id, { ar: ServiceText; en: ServiceText }> = {
 <p>إن رأيت رقمًا لا يطابق نصًا رسميًا، أو نسبة ضريبة تغيرت، أو فرقًا غير مفهوم بين حاسبتنا ولوحة محل، فاكتب لنا على <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a> مع رابط المصدر إن وجد. نصحح المعيار في ملف واحد فيتغير في كل الحاسبات، ونذكر تاريخ التصحيح في أعلى الصفحات. السياسة الكاملة في ${h.a('editorial', 'السياسة التحريرية')}.</p>`,
     },
     en: {
-      title: 'About Gold Mizan: Gulf Gold Rate Calculators by Radif Partners',
-      description: 'Who publishes Gold Mizan, why we built it, how we work out gold prices in the UAE, Saudi Arabia and the Gulf, how the site is funded and how to report an error in a figure or legal text.',
+      title: 'Gold Mizan by Radif Partners: Who We Are and Why We Built It',
+      description: 'Who publishes Gold Mizan, why we built it, how we work out gold prices in the UAE, Saudi Arabia and the Gulf, how the site is funded and how to report an error.',
       h1: 'About Gold Mizan',
       body: (h) => `
 <p>Gold Mizan is published by Radif Partners, an independent publisher of free calculators and practical guides. We sell no gold, own no shop, take no commission on any purchase and list no dealer phone numbers. The site has one aim: that anyone walking into a gold shop in Dubai, Riyadh or Kuwait knows what the gold they are buying or selling is worth, and what they will pay on top, before they pay.</p>
@@ -48,7 +48,7 @@ export const SERVICE: Record<Id, { ar: ServiceText; en: ServiceText }> = {
   method: {
     ar: {
       title: 'طريقة حساب سعر الذهب: الأونصة وسعر الصرف والعيار والضريبة',
-      description: 'كيف يحسب ميزان الذهب سعر الغرام لكل عيار والسعر النهائي للقطعة: المعادلات، ومصادر الأونصة وأسعار الصرف ونسب الضريبة، والاختبارات، وحدود الحساب التي يجب أن تعرفها.',
+      description: 'كيف يحسب ميزان الذهب سعر الغرام لكل عيار والسعر النهائي للقطعة: المعادلات، ومصادر الأونصة وأسعار الصرف ونسب الضريبة، والاختبارات، وحدود الحساب بصراحة.',
       h1: 'طريقة الحساب ومصادرها',
       body: (h) => `
 <h2>سعر غرام عيار 24</h2>
@@ -65,8 +65,8 @@ export const SERVICE: Record<Id, { ar: ServiceText; en: ServiceText }> = {
 <p>لا نعرف هامش محل بعينه ولا مصنعيته، فهما مدخلات يكتبها الزائر. لا نحسب الرسوم الجمركية ولا ضريبة الاستيراد. الكويت وقطر بلا ضريبة قيمة مضافة بحسب مراجعتنا، وقد يتغير ذلك. سعر الأونصة من مصدر واحد، وقد يختلف قليلًا عن مصادر أخرى في اللحظة نفسها. الأرقام تقدير إرشادي ولا تغني عن فاتورة البائع.</p>`,
     },
     en: {
-      title: 'How We Calculate Gold Prices: Ounce, Exchange Rate, Karat and VAT',
-      description: 'How Gold Mizan works out the gram price for each karat and the final price of a piece: formulas, sources for the ounce, exchange rates and VAT, the tests, and the limits you should know.',
+      title: 'Gold Price Method: Ounce, Exchange Rate, Karat and VAT Rules',
+      description: 'How Gold Mizan works out the gram price per karat and the final price of a piece: formulas, sources for the ounce, exchange rates and VAT, tests and limits.',
       h1: 'How we calculate, and our sources',
       body: (h) => `
 <h2>The 24K gram price</h2>

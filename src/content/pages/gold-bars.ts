@@ -7,7 +7,7 @@ export default definePage({
   ar: {
     slug: 'gold-bars', nav: 'سعر سبائك الذهب', card: 'سعر السبيكة من غرام إلى كيلو، بعلاوة البائع وقواعد الضريبة في كل بلد.',
     title: 'سعر سبائك الذهب {year}: من غرام إلى كيلو مع الضريبة في الخليج',
-    description: 'سعر سبيكة الذهب عيار 24 من غرام واحد إلى كيلو في السعودية والإمارات والخليج: قيمة الذهب، وعلاوة البائع، ونسبة الصفر في الإمارات، وشرط أول توريد في السعودية وعُمان.',
+    description: 'سعر سبيكة الذهب عيار 24 من غرام إلى كيلو في السعودية والإمارات والخليج: قيمة الذهب، وعلاوة البائع، ونسبة الصفر في الإمارات، وشرط أول توريد في السعودية.',
     h1: 'سعر سبائك الذهب في الخليج',
     resume: 'سعر سبيكة الذهب يتكون من قيمة الذهب الخالص فيها، أي وزنها مضروبًا في سعر غرام عيار 24 الآن، ومن علاوة يضيفها البائع لتغطية السك والفحص والتغليف وهامشه، ثم من ضريبة القيمة المضافة إن وجبت. في الإمارات تخضع السبائك والعملات بنقاوة 99% فأكثر والقابلة للتداول في أسواق السبائك العالمية لنسبة الصفر عند أي بائع، بحسب المادة 36 من اللائحة التنفيذية. في السعودية تقصر المادة 36 من اللائحة نسبة الصفر على أول توريد يقوم به المنتج أو المصفاة، ونقرأ القاعدة العمانية بالطريقة نفسها. في الكويت وقطر لا ضريبة قيمة مضافة حتى تاريخ مراجعتنا، وفي البحرين لم نجد القاعدة في صفحات الجهاز التي قرأناها فنطبق النسبة الأساسية {vat.BH}. الحاسبة تعطي سعر السبيكة النهائي بحسب وزنها والبلد والبائع والعلاوة التي تكتبها، بسعر الأونصة الآن.',
     faqs: [
@@ -33,8 +33,8 @@ export default definePage({
   },
   en: {
     slug: 'gold-bar-price', nav: 'Gold bar prices', card: 'A bar from one gram to a kilo, with dealer premium and each country’s VAT rule.',
-    title: 'Gold Bar Price {year}: From 1 Gram to 1 Kilo With Gulf VAT Rules',
-    description: 'The price of a 24K gold bar from one gram to a kilo in Saudi Arabia, the UAE and the Gulf: gold value, dealer premium, the UAE zero rate and the Saudi and Omani first-supply rule.',
+    title: 'Gold Bar Price {year}: 1 Gram to 1 Kilo With Gulf VAT Rules',
+    description: 'A 24K gold bar from one gram to a kilo in Saudi Arabia, the UAE and the Gulf: gold value, dealer premium, the UAE zero rate and the Saudi first-supply rule.',
     h1: 'Gold bar prices in the Gulf',
     resume: 'The price of a gold bar is the value of the pure gold in it, its weight times the current 24K gram price, plus a premium the dealer adds for minting, assay, packaging and margin, plus VAT where it applies. In the UAE, bars and coins of 99% purity or more that are tradeable on world bullion markets are zero-rated from any seller under Article 36 of the Executive Regulation. In Saudi Arabia, Article 36 of the Implementing Regulations limits the zero rate to the first supply by the producer or refiner, and we read the Omani rule the same way. Kuwait and Qatar had no VAT as of our review, and for Bahrain we did not find the rule in the bureau pages we read, so the standard {vat.BH} applies in our calculator. The calculator gives the final bar price by weight, country, seller and the premium you enter, at the current ounce price. Expats in Dubai often find this is the cheapest way to hold gold in the Gulf, and the figures show why.',
     faqs: [

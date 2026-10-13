@@ -6,8 +6,8 @@ export default definePage({
   sources: ['cbo', 'omanVatLaw', 'goldApi', 'ukWeights'],
   ar: {
     slug: 'oman', nav: 'سعر الذهب في عُمان', card: 'الغرام بالريال العماني، بسعر الربط 2.6008 دولار للريال.',
-    title: 'سعر الذهب في عمان اليوم {year}: غرام 24 و22 و21 بالريال العماني',
-    description: 'سعر غرام الذهب في سلطنة عمان الآن بالريال العماني لعيار 24 و22 و21 و18، بالربط الثابت 2.6008 دولار للريال، مع ضريبة 5% ونسبة الصفر للذهب الاستثماري.',
+    title: 'سعر الذهب في عمان اليوم {year}: غرام 24 و22 و21 بالريال',
+    description: 'سعر غرام الذهب في سلطنة عمان الآن بالريال العماني لعيار 24 و22 و21 و18، بالربط الثابت 2.6008 دولار للريال، مع ضريبة 5% ونسبة الصفر للذهب الاستثماري فيها.',
     h1: 'سعر الذهب في عُمان اليوم بالريال العماني',
     resume: 'البنك المركزي العماني يعبّر عن الربط بطريقة معكوسة: الريال العماني يساوي {peg.OMusd} دولار، ولم يتغير هذا الربط منذ آخر تعديل في 1986. لذلك نقسم سعر الأونصة بالدولار على {peg.OMusd} لنحصل على سعرها بالريال، ثم على {oz} غرام، ثم نضرب في نسبة العيار. ولأن الريال العماني أكبر من الدولار، يكون سعر غرام الذهب بضع عشرات من الريالات، ويُكتب بثلاث خانات عشرية، أي بالبيسة. يفرض قانون ضريبة القيمة المضافة العماني نسبة {vat.OM} في المادة 36 على التوريدات، ومنها المشغولات الذهبية بقيمة الذهب والمصنعية، بينما تذكر المادة 51 توريد الذهب والفضة والبلاتين الاستثماري ضمن التوريدات بنسبة الصفر وفق شروط اللائحة. الحاسبة تعرض قيمة الذهب الخام في مسقط وصلالة وصحار لأي وزن.',
     faqs: [
@@ -26,7 +26,7 @@ export default definePage({
   en: {
     slug: 'oman', nav: 'Gold price in Oman', card: 'The gram in Omani rials, at the fixed peg of USD 2.6008 per rial.',
     title: 'Gold Price in Oman Today {year}: 24K, 22K, 21K in Omani Rials',
-    description: 'Gold price in Oman now in Omani rials for 24, 22, 21 and 18 karat, at the fixed peg of USD 2.6008 per rial, with 5% VAT on jewellery and the zero rate on investment gold.',
+    description: 'Gold price in Oman now in Omani rials for 24, 22, 21 and 18 karat, at the fixed peg of USD 2.6008 per rial, with 5% VAT on jewellery and zero on bars.',
     h1: 'Gold price in Oman today, in Omani rials',
     resume: 'The Central Bank of Oman states its peg the other way round: one Omani rial equals USD {peg.OMusd}, unchanged since the last change in parity in 1986. So we divide the dollar ounce price by {peg.OMusd} to get it in rials, then by {oz} grams, then apply the karat ratio. Since the rial is worth more than a dollar, a gram of gold is a few tens of rials and is written to three decimals, in baisa. The Omani VAT Law sets {vat.OM} in Article 36, which covers jewellery on gold and making together, while Article 51 lists the supply of investment gold, silver and platinum among the zero-rated supplies, within the conditions of the Executive Regulations. The calculator shows the metal value in Muscat, Salalah or Sohar for any weight, which helps expats used to quoting in dirhams or riyals.',
     faqs: [

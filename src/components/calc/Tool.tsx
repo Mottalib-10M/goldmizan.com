@@ -255,7 +255,7 @@ function Compare({ lang, karat = 21, mini }: ToolArgs) {
         <div className="grid grid-cols-2 gap-x-4"><KaratSelect id="cmp-k" lang={lang} value={k} onChange={setK} /><NumberField id="cmp-g" lang={lang} label={T(lang, 'الوزن', 'Weight')} value={g} onChange={setG} unit={T(lang, 'غرام', 'g')} decimals={2} max={100000} /></div>
         <NumberField id="cmp-m" lang={lang} label={T(lang, 'المصنعية بالنسبة من قيمة الذهب', 'Making charge as % of gold value')} value={mk} onChange={setMk} unit="%" decimals={1} max={100}
           help={T(lang, 'نسبة واحدة في كل البلدان لتظهر أثر الضريبة وحدها', 'One rate everywhere, so only VAT makes the difference')} />
-        <SpotLine spot={spot} lang={lang} country={c} />
+        <SpotLine spot={spot} lang={lang} />
       </>}
       result={<>
         <Big label={T(lang, 'أرخص بلد لهذه القطعة شاملًا الضريبة', 'Cheapest country for this piece, VAT included')} value={COUNTRY_NAME[best.c][lang]} sub={money(best.r.total, cur(best.c), lang)} />
