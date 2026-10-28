@@ -3,7 +3,7 @@ import { definePage } from '../../lib/page-types';
 export default definePage({
   id: 'kuwait', group: 'today', order: 12, tool: 'board', toolProps: { country: 'KW', karat: 21 }, kind: 'outil',
   related: ['qatar', 'karat-21', 'karat-18', 'compare-countries', 'jewellery-price', 'gram-price'],
-  sources: ['cbk', 'cbuaeFx', 'fxApi', 'goldApi'],
+  sources: ['cbk', 'cbuaeFx', 'fxApi', 'goldApi', 'worldBank'],
   ar: {
     slug: 'kuwait', nav: 'سعر الذهب في الكويت', card: 'الغرام بالدينار الكويتي، بسعر صرف اليوم لأن الدينار مربوط بسلة عملات.',
     title: 'سعر الذهب في الكويت اليوم {year}: غرام 24 و21 و18 بالدينار',
@@ -21,13 +21,21 @@ export default definePage({
 <h2>رقم احتياطي من جهة رسمية</h2>
 <p>إذا لم يصل سعر اليوم نستعمل الرقم الذي ينشره ${h.src('cbuaeFx', 'مصرف الإمارات المركزي')} في جدوله الشهري لأسعار الصرف، فهو جدول رسمي يذكر الدينار الكويتي مقابل الدرهم كل يوم عمل. من الدينار مقابل الدرهم والدولار مقابل الدرهم نستخرج {peg.KW} دينار للدولار في آخر يوم من الجدول. يبقى رقمًا تقديريًا، والسطر الذي تحت الحاسبة يقول لك أي الرقمين استُعمل: سعر اليوم أو الرقم الاحتياطي.</p>
 <h2>من دون ضريبة، تبقى المصنعية هي الفرق</h2>
-<p>غياب الضريبة يجعل المقارنة مع دول الضريبة لصالح الكويت في الحسابات الخام، لكن المصنعية هي التي تحسم السعر النهائي. قطعة بمصنعية مرتفعة في الكويت قد تكلف أكثر من قطعة بمصنعية منخفضة في دبي رغم ضريبة {vat.AE} هناك. جرّب الحالتين في ${h.a('compare-countries', 'حاسبة المقارنة بين دول الخليج')}، واطلب من البائع أن يكتب سعر الغرام والمصنعية في سطرين منفصلين.</p>`,
+<p>غياب الضريبة يجعل المقارنة مع دول الضريبة لصالح الكويت في الحسابات الخام، لكن المصنعية هي التي تحسم السعر النهائي. قطعة بمصنعية مرتفعة في الكويت قد تكلف أكثر من قطعة بمصنعية منخفضة في دبي رغم ضريبة {vat.AE} هناك. جرّب الحالتين في ${h.a('compare-countries', 'حاسبة المقارنة بين دول الخليج')}، واطلب من البائع أن يكتب سعر الغرام والمصنعية في سطرين منفصلين.</p>
+<h2>سعر الذهب في الكويت عبر السنوات بالدينار</h2>
+<p>أرقام هذا الجدول هي متوسط سعر الأونصة لكل سنة بحسب ${h.src('worldBank', 'بيانات البنك الدولي الشهرية')}، محوّلًا إلى غرام عيار 24 و21 و18 بالدينار الكويتي. لأن الدينار مربوط بسلة، فسعره مقابل الدولار تغيّر قليلًا عبر هذه السنوات؛ للتبسيط حوّلنا كل الأعوام بالرقم الاحتياطي نفسه {peg.KW}، وكتبنا ذلك تحت الجدول. الصورة العامة صحيحة، أما الفلس الأخير في سنة قديمة فتقريبي.</p>
+<!--table:annual:KW:24,21,18-->
+<p>ومن اشترى سبيكة أو ليرات في سنة سابقة يرى هنا قيمتها الآن: حدد شهر الشراء والمبلغ بالدينار، فتحسب الأداة عدد الغرامات بمتوسط ذلك الشهر ثم تقيّمها بأونصة اليوم.</p>
+<!--tool:history-->
+<h2>حساب زكاة الذهب بالدينار الكويتي</h2>
+<p>في الكويت تُخرج زكاة الذهب بالدينار في الغالب، والأساس هو وزن الذهب الخالص لا وزن القطعة. اكتب غرامات كل عيار تملكه، فتجمعها الحاسبة ذهبًا خالصًا وتقارنها بالنصاب ({mithqal} مثقالًا)، ثم تعطي ربع العشر بالدينار بسعر الأونصة الآن. حلي الزينة المستعملة محل خلاف بين العلماء، والقرار لك؛ ولقراءة الأقوال افتح ${h.a('zakat-gold', 'حاسبة الزكاة الكاملة')}.</p>
+<!--tool:zakat-->`,
   },
   en: {
     slug: 'kuwait', nav: 'Gold price in Kuwait', card: 'The gram in Kuwaiti dinars, at today’s rate, since the dinar follows a basket.',
-    title: 'Gold Price in Kuwait Today {year}: 24K, 21K and 18K in Dinars',
+    title: 'Gold Rate in Kuwait Today {year}: 24K, 21K and 18K in Dinars',
     description: 'Gold price in Kuwait now in dinars for 24, 22, 21 and 18 karat, from the ounce and today’s dinar rate, since the dinar follows a basket, not the dollar.',
-    h1: 'Gold price in Kuwait today, in dinars',
+    h1: 'Gold rate in Kuwait today, in dinars',
     resume: 'Kuwait works differently from its neighbours: the dinar is not pegged to the dollar alone but to a basket of currencies set by the Central Bank of Kuwait, so its dollar rate shifts slightly from day to day. The dinar price of gold therefore depends on two things, the dollar ounce price and the dinar exchange rate. The calculator takes today’s dinar rate from ExchangeRate-API and, if that fails, falls back on the last figure published by the UAE central bank in its monthly table, {peg.KW} dinars to the dollar. Because the dinar is a large unit, the gram is quoted to three decimals, in fils. Kuwait applies no VAT on jewellery as of our last review, so the final price of a piece is gold plus making charge. Enter the weight and karat of your piece to see the metal value in dinars, which is a useful check before haggling in the souq.',
     faqs: [
       { q: 'Why does the dinar gold price move even when the ounce does not?', a: 'Because the dinar follows a basket of currencies, not the dollar alone, under the Central Bank of Kuwait exchange rate policy. When the dollar strengthens against the basket, a dollar buys a little more dinar and the gram price shifts even with a flat ounce. The effect is usually small, but it is real.' },
@@ -40,6 +48,14 @@ export default definePage({
 <h2>An official fallback</h2>
 <p>If today’s rate does not arrive, we use the figure from the ${h.src('cbuaeFx', 'UAE central bank')} monthly exchange rate table, an official table listing the Kuwaiti dinar against the dirham for every working day. Dividing the dollar rate in dirhams by the dinar rate in dirhams gives {peg.KW} dinars per dollar on the last day of the table. It remains an estimate, and the line under the calculator tells you which rate was used, today’s or the fallback.</p>
 <h2>No VAT, so the making charge decides</h2>
-<p>Without VAT, Kuwait wins the raw comparison with VAT countries, but the making charge decides the final price. A heavily worked piece in Kuwait can cost more than a plain one in Dubai despite the {vat.AE} VAT there. Try both in the ${h.a('compare-countries', 'Gulf comparison calculator')}, and ask the seller to put gram price and making charge on two separate lines.</p>`,
+<p>Without VAT, Kuwait wins the raw comparison with VAT countries, but the making charge decides the final price. A heavily worked piece in Kuwait can cost more than a plain one in Dubai despite the {vat.AE} VAT there. Try both in the ${h.a('compare-countries', 'Gulf comparison calculator')}, and ask the seller to put gram price and making charge on two separate lines.</p>
+<h2>Gold rate in Kuwait over the years, in dinars</h2>
+<p>This table shows the yearly average ounce from the ${h.src('worldBank', 'World Bank monthly data')}, converted into a gram of 24K, 21K and 18K in Kuwaiti dinars. Because the dinar follows a basket, its dollar rate shifted a little over these years; to keep it simple every year is converted at the same fallback figure of {peg.KW}, as the caption says. The overall picture holds, while the last fils for an old year is approximate.</p>
+<!--table:annual:KW:24,21,18-->
+<p>If you bought a bar or coins in an earlier year, see what it is worth now: set the month and the amount in dinars, and the tool counts the grams at that month’s average, then values them at today’s ounce.</p>
+<!--tool:history-->
+<h2>Gold zakat in Kuwaiti dinars</h2>
+<p>In Kuwait zakat on gold is usually paid in dinars, and what counts is the weight of pure gold, not of the piece. Type the grams you hold in each karat; the calculator adds them up as pure gold, checks them against the nisab ({mithqal} mithqal) and gives one fortieth in dinars at the live ounce. Jewellery worn for adornment is debated among scholars, so the choice is yours; the views are set out in the ${h.a('zakat-gold', 'full zakat calculator')}.</p>
+<!--tool:zakat-->`,
   },
 });

@@ -28,9 +28,9 @@ export default definePage({
   },
   en: {
     slug: 'saudi-arabia', nav: 'Gold price in Saudi Arabia', card: 'The gram in riyals for every karat, at the official rate of 3.75 to the dollar.',
-    title: 'Gold Price in Saudi Arabia Today {year}: 24K, 21K, 18K in SAR',
+    title: 'Gold Rate in Saudi Arabia Today {year}: 24K, 21K, 18K in SAR',
     description: 'Gold price in Saudi Arabia now in riyals: a gram of 24, 22, 21 and 18 karat from the ounce and the Saudi Central Bank rate, plus what making and 15% VAT add.',
-    h1: 'Gold price in Saudi Arabia today, in riyals',
+    h1: 'Gold rate in Saudi Arabia today, in riyals',
     resume: 'In Saudi Arabia the riyal price of a gram of gold is the world ounce price in dollars, times {peg.SA}, the official exchange rate the Saudi Central Bank has held for decades, divided by {oz} grams, the weight of a troy ounce. Because the riyal is pegged, gold costs the same in Riyadh, Jeddah, Dammam or Khobar before a shop adds its margin, and it moves only when the ounce moves. A gram of 21 karat, the karat most Saudi shops sell, is seven eighths of a gram of 24; a gram of 18 is three quarters. When you buy a piece, the shop adds a making charge and then VAT at {vat.SA} on gold and making together, under the VAT Law. The calculator shows the metal value for any weight and refreshes every five minutes while the page is open, so expats comparing shops in the souq can check a quote on the spot.',
     faqs: [
       { q: 'Is gold the same price in Riyadh, Jeddah and Dammam?', a: 'The metal value is identical across the Kingdom, because it comes from the ounce price and a fixed rate of SAR {peg.SA} per dollar. What differs between shops is the margin on the board gram price and the making charge. Compare two offers on the final invoice, not on the gram price displayed in the window.' },

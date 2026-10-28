@@ -1,8 +1,8 @@
 /** Outils d'écriture (`Helpers`) passés au corps de chaque page. */
 import { route, ROUTES, type Locale } from '../i18n/routes';
-import { P, type SourceKey } from './engine/params';
+import { P, type SourceKey, type Country } from './engine/params';
 import type { Helpers } from './page-types';
-import { formatNumber, formatDecimal, formatPercent, money, displayDate } from './format';
+import { formatNumber, formatDecimal, formatPercent, money, displayDate, curLabel } from './format';
 import history from '../data/history-monthly.json';
 import { OZ } from './engine/gold';
 
@@ -56,4 +56,36 @@ export function annualTable(lang: Locale): string {
   const head = lang === 'ar' ? ['السنة', 'الأونصة (دولار)', 'غرام 24 (ريال)', 'غرام 24 (درهم)'] : ['Year', 'Ounce (USD)', '24K gram (SAR)', '24K gram (AED)'];
   const cap = lang === 'ar' ? `المصدر: البنك الدولي، بيانات أسعار السلع الشهرية، تحديث ${displayDate(history.updated, lang)}` : `Source: World Bank, monthly commodity price data, updated ${displayDate(history.updated, lang)}`;
   return h.table(head, rows, cap);
+}
+
+/** Moyennes annuelles (Banque mondiale) converties dans la monnaie d'un pays, pour quelques carats.
+ *  Taux constant = celui du fichier de paramètres (ancrage officiel, ou taux de repli de la Banque
+ *  centrale des EAU pour KWD et QAR) : la légende le dit, le tableau ne prétend pas refaire le change
+ *  de chaque année. Marqueur dans un corps de page : <!--table:annual:QA:24,22,21--> */
+export function annualTableFor(c: Country, karats: number[], lang: Locale): string {
+  const h = helpers(lang);
+  const C = P.countries[c];
+  const dec = C.currency === 'QAR' ? 2 : 3;
+  const unit = curLabel(C.currency, lang);
+  const rows = (history.annual as Array<{ y: number; usd: number; n: number }>).filter((r) => r.y >= 2016).reverse().map((r) => [
+    r.n < 12 ? `${r.y} (${formatNumber(r.n, 0, lang)} ${lang === 'ar' ? 'أشهر' : 'months'})` : String(r.y),
+    formatNumber(r.usd, 0, lang),
+    ...karats.map((k) => formatNumber((r.usd / OZ) * C.perUsd * (k / 24), dec, lang)),
+  ]);
+  const head = lang === 'ar'
+    ? ['السنة', 'الأونصة (دولار)', ...karats.map((k) => `غرام ${k} (${unit})`)]
+    : ['Year', 'Ounce (USD)', ...karats.map((k) => `${k}K gram (${unit})`)];
+  const rate = formatDecimal(C.perUsd, 4, lang);
+  const cap = lang === 'ar'
+    ? `المصدر: البنك الدولي، متوسط الأونصة السنوي، تحديث ${displayDate(history.updated, lang)}؛ التحويل بسعر ثابت ${rate} ${unit} للدولار، قبل المصنعية والضريبة`
+    : `Source: World Bank, yearly average ounce, updated ${displayDate(history.updated, lang)}; converted at a fixed ${rate} ${unit} per dollar, before making charge and VAT`;
+  return h.table(head, rows, cap);
+}
+
+/** Remplace les marqueurs de tableaux annuels d'un corps de page. */
+export function annualTables(body: string, lang: Locale): string {
+  return body.replace('<!--table:annual-->', annualTable(lang)).replace(/<!--table:annual:([A-Z]{2}):([\d,]+)-->/g, (_m, c: string, ks: string) => {
+    if (!(c in P.countries)) throw new Error(`pays inconnu ${c}`);
+    return annualTableFor(c as Country, ks.split(',').map(Number), lang);
+  });
 }

@@ -3,7 +3,7 @@ import { definePage } from '../../lib/page-types';
 export default definePage({
   id: 'oman', group: 'today', order: 15, tool: 'board', toolProps: { country: 'OM', karat: 22 }, kind: 'outil',
   related: ['bahrain', 'karat-22', 'gold-bars', 'compare-countries', 'jewellery-price', 'gram-price'],
-  sources: ['cbo', 'omanVatLaw', 'goldApi', 'ukWeights'],
+  sources: ['cbo', 'omanVatLaw', 'goldApi', 'ukWeights', 'worldBank'],
   ar: {
     slug: 'oman', nav: 'سعر الذهب في عُمان', card: 'الغرام بالريال العماني، بسعر الربط 2.6008 دولار للريال.',
     title: 'سعر الذهب في عمان اليوم {year}: غرام 24 و22 و21 بالريال',
@@ -21,13 +21,21 @@ export default definePage({
 <h2>الضريبة ونسبة الصفر</h2>
 <p>تنص ${h.src('omanVatLaw', 'المادة 36 من قانون ضريبة القيمة المضافة العماني')} على حساب الضريبة بنسبة {vat.OM} من القيمة الخاضعة للضريبة، وتدرج المادة 51 توريد الذهب والفضة والبلاتين الاستثماري ضمن التوريدات بنسبة الصفر، وفق الحدود والشروط التي تحددها اللائحة. قراءتنا للائحة أن نسبة الصفر تخص أول توريد بعد الاستخراج أو التصفية، كما في السعودية، ولذلك تسأل ${h.a('gold-bars', 'حاسبة السبيكة')} إن كان البائع هو المصفاة.</p>
 <h2>الريال والبيسة في الفاتورة</h2>
-<p>الريال العماني يُقسم إلى ألف بيسة، فتظهر في أسعار الغرام ثلاث خانات عشرية. إذا كتب المحل سعر غرام عيار 22 بالريال والبيسة فاكتبه في ${h.a('jewellery-price', 'حاسبة سعر القطعة')} مكان سعرنا، وستحصل على السعر النهائي مع المصنعية والضريبة، ثم قارنه بالأسعار في دول الخليج الأخرى.</p>`,
+<p>الريال العماني يُقسم إلى ألف بيسة، فتظهر في أسعار الغرام ثلاث خانات عشرية. إذا كتب المحل سعر غرام عيار 22 بالريال والبيسة فاكتبه في ${h.a('jewellery-price', 'حاسبة سعر القطعة')} مكان سعرنا، وستحصل على السعر النهائي مع المصنعية والضريبة، ثم قارنه بالأسعار في دول الخليج الأخرى.</p>
+<h2>سعر الذهب في عُمان عبر السنوات بالريال العماني</h2>
+<p>الريال العماني مثبت عند {peg.OMusd} دولار منذ عقود، فالتحويل هنا دقيق لكل سنة دون تقريب في سعر الصرف. يأخذ الجدول متوسط الأونصة السنوي من ${h.src('worldBank', 'البنك الدولي')} ويعطي غرام عيار 24 و22 و21 بالريال، بثلاث خانات للبيسة. من خلاله ترى كم تغيّر سعر الذهب في مسقط بين سنة وأخرى، بعيدًا عن تقلبات اليوم الواحد.</p>
+<!--table:annual:OM:24,22,21-->
+<p>إن كان عندك ذهب اشتريته في شهر معروف، فاكتب المبلغ بالريال العماني واختر الشهر، فتعرف كم ربحت أو خسرت في قيمة المعدن وحده، قبل المصنعية وقبل ضريبة {vat.OM} التي دُفعت على القطعة.</p>
+<!--tool:history-->
+<h2>زكاة الذهب في عُمان</h2>
+<p>الزكاة تُحسب على الذهب الخالص، فغرام عيار 21 لا يساوي غرامًا من النصاب بل سبعة أثمانه. أدخل أوزانك لكل عيار، فتعطيك الحاسبة مجموع الذهب الخالص ومقارنته بالنصاب، ثم المبلغ الواجب بالريال العماني والبيسة. ضريبة القيمة المضافة لا علاقة لها بالزكاة، فالحساب على قيمة المعدن فقط؛ وفي ${h.a('zakat-gold', 'دليل زكاة الذهب')} أقوال العلماء في الحلي.</p>
+<!--tool:zakat-->`,
   },
   en: {
     slug: 'oman', nav: 'Gold price in Oman', card: 'The gram in Omani rials, at the fixed peg of USD 2.6008 per rial.',
-    title: 'Gold Price in Oman Today {year}: 24K, 22K, 21K in Omani Rials',
+    title: 'Gold Rate in Oman Today {year}: 24K, 22K, 21K in Omani Rials',
     description: 'Gold price in Oman now in Omani rials for 24, 22, 21 and 18 karat, at the fixed peg of USD 2.6008 per rial, with 5% VAT on jewellery and zero on bars.',
-    h1: 'Gold price in Oman today, in Omani rials',
+    h1: 'Gold rate in Oman today, in Omani rials',
     resume: 'The Central Bank of Oman states its peg the other way round: one Omani rial equals USD {peg.OMusd}, unchanged since the last change in parity in 1986. So we divide the dollar ounce price by {peg.OMusd} to get it in rials, then by {oz} grams, then apply the karat ratio. Since the rial is worth more than a dollar, a gram of gold is a few tens of rials and is written to three decimals, in baisa. The Omani VAT Law sets {vat.OM} in Article 36, which covers jewellery on gold and making together, while Article 51 lists the supply of investment gold, silver and platinum among the zero-rated supplies, within the conditions of the Executive Regulations. The calculator shows the metal value in Muscat, Salalah or Sohar for any weight, which helps expats used to quoting in dirhams or riyals.',
     faqs: [
       { q: 'How is the gram price in Omani rials worked out?', a: 'The Central Bank of Oman fixes one rial at USD {peg.OMusd}. We divide the dollar ounce price by {peg.OMusd} to get the ounce in rials, divide by {oz} grams for a gram of 24K, then multiply by karat over 24. The price is the same in every governorate before the shop margin.' },
@@ -40,6 +48,14 @@ export default definePage({
 <h2>VAT and the zero rate</h2>
 <p>${h.src('omanVatLaw', 'Article 36 of the Omani VAT Law')} computes VAT at {vat.OM} of the taxable value, and Article 51 lists the supply of investment gold, silver and platinum among zero-rated supplies, within the limits and conditions set by the regulations. Our reading of the regulations is that the zero rate covers the first supply after extraction or refining, as in Saudi Arabia, which is why the ${h.a('gold-bars', 'bar calculator')} asks whether the seller is the refiner.</p>
 <h2>Rials and baisa on the invoice</h2>
-<p>An Omani rial is split into 1,000 baisa, so gram prices carry three decimals. If a shop quotes a gram of 22K in rials and baisa, type it in the ${h.a('jewellery-price', 'jewellery price calculator')} in place of ours to get the final price with making and VAT, then compare with the other Gulf countries.</p>`,
+<p>An Omani rial is split into 1,000 baisa, so gram prices carry three decimals. If a shop quotes a gram of 22K in rials and baisa, type it in the ${h.a('jewellery-price', 'jewellery price calculator')} in place of ours to get the final price with making and VAT, then compare with the other Gulf countries.</p>
+<h2>Gold rate in Oman over the years, in rials</h2>
+<p>The Omani rial has been fixed at USD {peg.OMusd} for decades, so the conversion here is exact for every year, with no approximation on the exchange rate. The table takes the yearly average ounce from the ${h.src('worldBank', 'World Bank')} and gives a gram of 24K, 22K and 21K in rials, to three decimals for the baisa. It shows how the price of gold in Muscat moved from one year to the next, away from day-to-day swings.</p>
+<!--table:annual:OM:24,22,21-->
+<p>If you hold gold bought in a known month, type the amount in Omani rials and pick the month to see what the metal alone gained or lost, before the making charge and the {vat.OM} VAT paid on the piece.</p>
+<!--tool:history-->
+<h2>Zakat on gold in Oman</h2>
+<p>Zakat is due on pure gold, so a gram of 21K counts as seven eighths of a gram towards the nisab, not a full gram. Enter your weights for each karat and the calculator gives the pure gold total, compares it with the nisab, then the amount due in rials and baisa. VAT has nothing to do with zakat, which is worked out on the metal value only; the ${h.a('zakat-gold', 'gold zakat guide')} sets out scholars’ views on jewellery.</p>
+<!--tool:zakat-->`,
   },
 });

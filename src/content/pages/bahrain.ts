@@ -3,7 +3,7 @@ import { definePage } from '../../lib/page-types';
 export default definePage({
   id: 'bahrain', group: 'today', order: 14, tool: 'board', toolProps: { country: 'BH', karat: 21 }, kind: 'outil',
   related: ['oman', 'karat-21', 'jewellery-price', 'compare-countries', 'gold-bars', 'gram-price'],
-  sources: ['cbb', 'nbrRate', 'goldApi', 'ukWeights'],
+  sources: ['cbb', 'nbrRate', 'goldApi', 'ukWeights', 'worldBank'],
   ar: {
     slug: 'bahrain', nav: 'سعر الذهب في البحرين', card: 'الغرام بالدينار البحريني، بسعر الربط 0.376 وضريبة 10%.',
     title: 'سعر الذهب في البحرين اليوم {year}: غرام 24 و21 و18 بالدينار',
@@ -21,13 +21,21 @@ export default definePage({
 <h2>ضريبة {vat.BH} وأثرها على القطعة</h2>
 <p>يشرح ${h.src('nbrRate', 'الجهاز الوطني للإيرادات')} أن البحرين بدأت بنسبة 5% في الأول من يناير 2019، ثم عُدّلت النسبة الأساسية إلى {vat.BH} من الأول من يناير 2022. في الفاتورة تُحسب الضريبة على المجموع، فأي زيادة في المصنعية تزيد الضريبة أيضًا. استخدم ${h.a('jewellery-price', 'حاسبة سعر القطعة')} واختر البحرين لترى الضريبة في سطر مستقل.</p>
 <h2>متى يكون الشراء من البحرين مفيدًا</h2>
-<p>قيمة الذهب الخام في البحرين مطابقة تقريبًا لجيرانها، لأن الدينار والريال والدرهم كلها مربوطة بالدولار. الضريبة الأعلى تجعل المشغولات أغلى قليلًا عند تساوي المصنعية. لهذا يقارن كثير من المقيمين بين السعر في المنامة وفي الخبر أو دبي قبل شراء طقم كبير، و${h.a('compare-countries', 'حاسبة المقارنة')} تفعل ذلك بنسبة مصنعية واحدة في كل البلدان.</p>`,
+<p>قيمة الذهب الخام في البحرين مطابقة تقريبًا لجيرانها، لأن الدينار والريال والدرهم كلها مربوطة بالدولار. الضريبة الأعلى تجعل المشغولات أغلى قليلًا عند تساوي المصنعية. لهذا يقارن كثير من المقيمين بين السعر في المنامة وفي الخبر أو دبي قبل شراء طقم كبير، و${h.a('compare-countries', 'حاسبة المقارنة')} تفعل ذلك بنسبة مصنعية واحدة في كل البلدان.</p>
+<h2>سعر الذهب في البحرين عبر السنوات بالدينار</h2>
+<p>ربط الدينار البحريني عند {peg.BH} للدولار يجعل هذا الجدول دقيقًا في التحويل: متوسط الأونصة السنوي كما يذكره ${h.src('worldBank', 'البنك الدولي')}، مقسومًا على وزن الأونصة، ومضروبًا في سعر الربط ونسبة العيار. تظهر أسعار غرام 24 و21 و18 بالدينار والفلس، وهي أسعار المعدن الخام قبل ضريبة {vat.BH} وقبل المصنعية، لتقارن سنة بسنة في سوق المنامة.</p>
+<!--table:annual:BH:24,21,18-->
+<p>وتقيس الأداة التالية ما صار إليه مبلغ بالدينار وُضع في ذهب خالص في شهر تختاره، فتفصل أثر صعود الأونصة عن الضريبة والمصنعية اللتين لا تعودان عند البيع.</p>
+<!--tool:history-->
+<h2>زكاة الذهب بالدينار البحريني</h2>
+<p>لإخراج زكاة الذهب في البحرين، اجمع الذهب الذي حال عليه الحول بحسب العيار، فالحاسبة تحوّله إلى ذهب خالص وتزنه بالنصاب، ثم تحسب الواجب بالدينار بسعر الأونصة وسعر الربط. الضريبة المدفوعة عند الشراء لا تُحسب في الزكاة. أما الحلي الذي يُلبس فالعلماء مختلفون فيه، والأقوال مفصلة في ${h.a('zakat-gold', 'صفحة الزكاة')}.</p>
+<!--tool:zakat-->`,
   },
   en: {
     slug: 'bahrain', nav: 'Gold price in Bahrain', card: 'The gram in Bahraini dinars, at the 0.376 peg, with 10% VAT.',
-    title: 'Gold Price in Bahrain Today {year}: 24K, 21K and 18K in Dinars',
+    title: 'Gold Rate in Bahrain Today {year}: 24K, 21K and 18K in Dinars',
     description: 'Gold price in Bahrain now in Bahraini dinars for 24, 22, 21 and 18 karat, at the 0.376 dollar peg, with the effect of 10% VAT on the final price of a piece.',
-    h1: 'Gold price in Bahrain today, in dinars',
+    h1: 'Gold rate in Bahrain today, in dinars',
     resume: 'The dinar price of a gram of gold in Bahrain is the dollar ounce price times {peg.BH}, the peg stated by the Central Bank of Bahrain, divided by {oz} grams and multiplied by the karat ratio. The central bank says the peg has been effectively unchanged since 1980, so gold in Manama moves with the ounce alone. What sets Bahrain apart is VAT: the National Bureau for Revenue raised the standard rate to {vat.BH} from 1 January 2022, twice the rate in the UAE and Oman. On a piece with 500 dinars of gold and making, VAT adds a tenth of that amount. We did not find the investment gold rules in the bureau pages we read, so we do not apply a zero rate to bars in Bahrain; the calculators use the standard rate and say so. The calculator gives the metal value in dinars for any weight and karat, useful for residents who also shop in Khobar or Dubai.',
     faqs: [
       { q: 'What is the VAT on gold in Bahrain?', a: 'The standard rate is {vat.BH} since 1 January 2022 according to the National Bureau for Revenue, up from 5% in 2019. On jewellery it applies to gold and making together. That is why a final price in Manama differs from Dubai even when the metal value is the same.' },
@@ -40,6 +48,14 @@ export default definePage({
 <h2>{vat.BH} VAT and the piece</h2>
 <p>The ${h.src('nbrRate', 'National Bureau for Revenue')} explains that Bahrain started at 5% on 1 January 2019 and raised the standard rate to {vat.BH} from 1 January 2022. On the invoice VAT is charged on the total, so a higher making charge also means more VAT. Pick Bahrain in the ${h.a('jewellery-price', 'jewellery price calculator')} to see VAT on its own line.</p>
 <h2>When buying in Bahrain makes sense</h2>
-<p>The metal value in Bahrain is almost identical to its neighbours, since the dinar, riyal and dirham are all pegged to the dollar. The higher VAT makes jewellery a little dearer at equal making charges. Many residents compare Manama with Khobar or Dubai before buying a large set; the ${h.a('compare-countries', 'comparison calculator')} does it with one making rate everywhere.</p>`,
+<p>The metal value in Bahrain is almost identical to its neighbours, since the dinar, riyal and dirham are all pegged to the dollar. The higher VAT makes jewellery a little dearer at equal making charges. Many residents compare Manama with Khobar or Dubai before buying a large set; the ${h.a('compare-countries', 'comparison calculator')} does it with one making rate everywhere.</p>
+<h2>Gold rate in Bahrain over the years, in dinars</h2>
+<p>The Bahraini dinar’s peg at {peg.BH} per dollar makes this table exact on conversion: the yearly average ounce as given by the ${h.src('worldBank', 'World Bank')}, divided by the ounce weight, times the peg and the karat ratio. It shows a gram of 24K, 21K and 18K in dinars and fils, raw metal prices before {vat.BH} VAT and before making, so you can compare one year with another in the Manama market.</p>
+<!--table:annual:BH:24,21,18-->
+<p>The next tool measures what a sum in dinars put into pure gold in a month of your choice has become, separating the ounce’s rise from the VAT and making charge that never come back when you sell.</p>
+<!--tool:history-->
+<h2>Gold zakat in Bahraini dinars</h2>
+<p>To pay zakat on gold in Bahrain, add up the gold held for a full lunar year by karat: the calculator converts it to pure gold, weighs it against the nisab and works out the amount due in dinars at the ounce price and the peg. VAT paid at purchase plays no part in zakat. Scholars differ on jewellery that is worn, and the views are detailed on the ${h.a('zakat-gold', 'zakat page')}.</p>
+<!--tool:zakat-->`,
   },
 });
