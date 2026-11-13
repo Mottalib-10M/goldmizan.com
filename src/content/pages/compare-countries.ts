@@ -20,7 +20,7 @@ export default definePage({
 <p>لو تركنا لكل بلد مصنعية مختلفة لكانت النتيجة تقديرًا من عندنا، ولا نملك رقمًا رسميًا لمتوسط المصنعية في أي بلد. النسبة الواحدة تجعل المقارنة عادلة: إن كان المحل في الكويت يأخذ المصنعية نفسها التي يأخذها محل في الدمام، فهذا هو فرق الضريبة. إن عرفت المصنعية الفعلية في كل محل، فاحسب كل عرض وحده في ${h.a('jewellery-price', 'حاسبة سعر القطعة')}.</p>
 <h2>نسب الضريبة من مصادرها</h2>
 <p>نأخذ النسب من نصوصها: ${h.src('ksaVatLaw', 'نظام ضريبة القيمة المضافة السعودي')} بنسبة {vat.SA}، و${h.src('uaeDecreeLaw', 'المرسوم بقانون الإماراتي رقم 8 لسنة 2017')} بنسبة {vat.AE}، و${h.src('nbrRate', 'الجهاز الوطني للإيرادات في البحرين')} بنسبة {vat.BH}، و${h.src('omanVatLaw', 'قانون ضريبة القيمة المضافة العماني')} بنسبة {vat.OM}. الكويت وقطر بلا ضريبة قيمة مضافة حتى تاريخ مراجعتنا.</p>
-<h2>عمود الدولار</h2>
+<h2>عمود الدولار ومقارنة سعر الذهب في الخليج</h2>
 <p>كل سطر في الحاسبة يذكر السعر بعملة البلد ثم بالدولار. التحويل إلى الدولار يستعمل سعر الربط في السعودية والإمارات والبحرين وعُمان، وسعر اليوم أو الرقم الاحتياطي من ${h.src('cbuaeFx', 'جدول مصرف الإمارات المركزي')} في الكويت وقطر. الترتيب يقوم على عمود الدولار، فيمكنك أن تقارن أسطرًا بعملات مختلفة دون حساب.</p>`,
   },
   en: {
@@ -39,7 +39,7 @@ export default definePage({
 <p>Giving each country its own making charge would mean inventing a figure: there is no official average making charge for any country. One rate keeps the comparison fair: if the shop in Kuwait charges the same making as one in Dammam, the gap is the VAT. If you know the actual making charge in each shop, price each offer separately in the ${h.a('jewellery-price', 'jewellery price calculator')}.</p>
 <h2>VAT rates from their sources</h2>
 <p>The rates come from the texts themselves: the ${h.src('ksaVatLaw', 'Saudi VAT Law')} at {vat.SA}, ${h.src('uaeDecreeLaw', 'UAE Federal Decree-Law No. 8 of 2017')} at {vat.AE}, ${h.src('nbrRate', 'Bahrain’s National Bureau for Revenue')} at {vat.BH} and the ${h.src('omanVatLaw', 'Omani VAT Law')} at {vat.OM}. Kuwait and Qatar had no VAT as of our review.</p>
-<h2>The dollar column</h2>
+<h2>The dollar column: comparing gold across the Gulf</h2>
 <p>Each line gives the price in local currency and then in dollars. The conversion uses the peg in Saudi Arabia, the UAE, Bahrain and Oman, and today’s rate or the fallback from the ${h.src('cbuaeFx', 'UAE central bank table')} in Kuwait and Qatar. The ranking follows the dollar column, so lines in different currencies compare without any arithmetic.</p>`,
   },
 });

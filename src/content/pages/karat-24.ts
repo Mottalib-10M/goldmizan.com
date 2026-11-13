@@ -22,7 +22,7 @@ export default definePage({
 <p>سبيكة غرام واحد وسبيكة كيلو تحتويان الذهب نفسه، لكن تكلفة السك والفحص والتغليف لا تتناسب مع الوزن، فترتفع العلاوة للغرام كلما صغرت السبيكة. من يدخر مبلغًا صغيرًا كل شهر يدفع علاوة أعلى من مشتري سبيكة كبيرة مرة واحدة. ${h.a('gold-bars', 'حاسبة السبيكة')} تتيح لك كتابة علاوة البائع لترى أثرها بالريال أو الدرهم.</p>
 <h2>عيار 24 والزكاة</h2>
 <p>في ${h.a('zakat-gold', 'حاسبة الزكاة')} نحول كل العيارات إلى ذهب خالص قبل مقارنتها بالنصاب، فغرام عيار 24 يُحسب كما هو تقريبًا، وغرام 21 يُحسب 0.875 غرام. لذلك من يملك سبائك عيار 24 يبلغ النصاب بوزن أقل من صاحب حلي عيار 18.</p>
-<h2>كيف تقرأ تغير السعر</h2>
+<h2>كيف تقرأ تغير سعر الذهب عيار 24</h2>
 <p>لأن الريال والدرهم والدينار البحريني والريال العماني مربوطة بالدولار، فإن أي تغير في سعر غرام 24 بهذه العملات هو تغير في الأونصة نفسها، بالنسبة نفسها. يمكنك أن ترى مسار الأونصة على مدى عشر سنوات في ${h.a('gold-history', 'صفحة سعر الذهب عبر السنوات')} المأخوذة من بيانات البنك الدولي.</p>`,
   },
   en: {
@@ -43,7 +43,7 @@ export default definePage({
 <p>A one-gram bar and a kilo bar hold the same gold, but minting, assay and packaging costs do not scale with weight, so the premium per gram rises as bars get smaller. Someone saving a small sum every month pays a higher premium than someone buying one large bar. The ${h.a('gold-bars', 'bar calculator')} lets you enter the dealer premium and see its effect in riyals or dirhams.</p>
 <h2>24K and zakat</h2>
 <p>In the ${h.a('zakat-gold', 'zakat calculator')} every karat is converted to pure gold before it is compared with the nisab, so a gram of 24K counts almost as it is and a gram of 21K counts as 0.875 g. Someone holding 24K bars therefore reaches the nisab with less weight than someone holding 18K jewellery.</p>
-<h2>Reading a price change</h2>
+<h2>Reading a change in the 24K gold price</h2>
 <p>Because the riyal, the dirham, the Bahraini dinar and the Omani rial are pegged to the dollar, any change in the 24K gram price in those currencies is a change in the ounce itself, by the same percentage. You can follow the ounce over ten years on the ${h.a('gold-history', 'gold price history page')}, built from World Bank data.</p>`,
   },
 });

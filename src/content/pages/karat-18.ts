@@ -20,7 +20,7 @@ export default definePage({
 <p>الحساب مباشر: سعر الأونصة بالدولار قسمة ${h.src('ukWeights', '31.1034768 غرام')}، ضرب سعر الصرف ({peg.SA} للريال بحسب ${h.src('sama', 'البنك المركزي السعودي')})، ضرب 18 قسمة 24. بما أن 18 على 24 تساوي 0.75 بالضبط، فإن سعر غرام عيار 18 هو ثلاثة أرباع غرام عيار 24 دائمًا، دون تقريب.</p>
 <h2>المصنعية في المجوهرات الدقيقة</h2>
 <p>في القطع المرصعة يتحول جزء كبير من السعر إلى عمل يدوي: تثبيت الأحجار، والنقش، والتلميع. لذلك تُعلن المصنعية أحيانًا مبلغًا ثابتًا للقطعة لا للغرام. اكتب هذا المبلغ في ${h.a('jewellery-price', 'حاسبة سعر القطعة')}، وستضاف إليه ضريبة القيمة المضافة كما تنص ${h.src('ksaVatLaw', 'المادة الثانية من النظام السعودي')}، لأن الضريبة تشمل المصنعية.</p>
-<h2>من عيار 18 إلى غيره</h2>
+<h2>من سعر عيار 18 إلى سعر غيره</h2>
 <p>إن أردت أن تعرف ما يعادل قطعتك من عيار 21 أو 24 فاستخدم ${h.a('karat-converter', 'حاسبة التحويل بين العيارات')}. عشرون غرامًا من عيار 18 تحتوي على 15 غرامًا من الذهب الخالص، أي ما يحتويه نحو 17.1 غرام من عيار 21. وعند البيع يبدأ الحساب من هذا الذهب الخالص، كما في ${h.a('sell-gold', 'حاسبة بيع الذهب المستعمل')}.</p>`,
   },
   en: {
@@ -35,7 +35,7 @@ export default definePage({
       { q: 'How do I know the gold weight of a set piece?', a: 'The scale weight includes the stones. A good invoice lists gold weight in grams and stone weight in carats separately. If yours does not, ask before paying, because multiplying the total weight by the gram price overstates the gold, sometimes by a wide margin.' },
     ],
     body: (h) => `
-<h2>Three quarters of a pure gram</h2>
+<h2>Why the 18K gold price is three quarters of a pure gram</h2>
 <p>The sum is direct: dollar ounce price divided by ${h.src('ukWeights', '31.1034768 g')}, times the exchange rate ({peg.SA} for the riyal per the ${h.src('sama', 'Saudi Central Bank')}), times 18 over 24. Since 18/24 is exactly 0.75, a gram of 18K is always three quarters of a gram of 24K, with no rounding.</p>
 <h2>Making charges on fine jewellery</h2>
 <p>On set pieces a large share of the price is handwork: setting stones, engraving, polishing. Shops therefore sometimes quote making as a fixed amount for the piece rather than per gram. Enter that amount in the ${h.a('jewellery-price', 'jewellery price calculator')}; VAT is added to it as ${h.src('ksaVatLaw', 'Article 2 of the Saudi VAT Law')} provides, since VAT covers the making charge.</p>

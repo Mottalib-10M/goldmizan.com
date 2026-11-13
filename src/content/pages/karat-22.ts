@@ -18,7 +18,7 @@ export default definePage({
     body: (h) => `
 <h2>عيار 22 في سوق دبي</h2>
 <p>في ديرة والكرامة والشارقة تجد المحلات الهندية تعرض عيار 22 أولًا، وعيار 24 للعملات، وعيار 18 للماس. الزبون الذي اعتاد شراء الذهب في كيرالا أو لاهور يسأل عن عيار 22 تلقائيًا، فتصير مقارنة الأسعار بين المدينتين ممكنة فقط إذا كان العيار واحدًا. الحاسبة تحسب قيمة هذا العيار بالدرهم بسعر الربط الذي يذكره ${h.src('cbuae', 'مصرف الإمارات المركزي')}.</p>
-<h2>لماذا لوحة المحل أعلى من النسبة</h2>
+<h2>لماذا سعر الذهب عيار 22 على لوحة المحل أعلى من النسبة</h2>
 <p>لو أخذت سعر غرام 24 من لوحة محل وضربته في 22 على 24 لوجدت رقمًا أقل من سعر عيار 22 في اللوحة نفسها. المحل يضيف هامشه بالدرهم على كل غرام، لا نسبة مئوية من سعره، فيظهر أكبر في العيار الأقل. لهذا نعرض قيمة المعدن الخالص في كل عيار، ونترك لك أن تكتب سعر اللوحة في ${h.a('jewellery-price', 'حاسبة سعر القطعة')}.</p>
 <h2>الضريبة والاسترداد</h2>
 <p>تُفرض ضريبة {vat.AE} على المشغولات بحسب ${h.src('uaeDecreeLaw', 'المرسوم بقانون رقم 8 لسنة 2017')}، على الذهب والمصنعية. السائح غير المقيم يسترد معظمها بعد خصم {tourist.fee} منها و{tourist.fixed} درهم للطلب، والحساب في ${h.a('tourist-refund', 'حاسبة الاسترداد')}. أما المقيم في الإمارات فيدفعها كاملة، وهذا ما يجعل الأسعار النهائية التي يتبادلها الأصدقاء متضاربة أحيانًا.</p>`,
@@ -37,7 +37,7 @@ export default definePage({
     body: (h) => `
 <h2>22K in the Dubai market</h2>
 <p>In Deira, Karama and Sharjah, Indian jewellers put 22K first, 24K for coins and 18K for diamond pieces. A buyer used to shopping for gold in Kerala or Lahore asks for 22K automatically, so comparing prices between the two cities only works at the same karat. The calculator values it in dirhams at the rate listed by the ${h.src('cbuae', 'UAE central bank')}.</p>
-<h2>Why the board is above the ratio</h2>
+<h2>Why the shop board’s 22K gold price is above the ratio</h2>
 <p>Take a shop’s 24K board price, multiply by 22/24, and you get less than its own 22K board price. The shop adds its margin as dirhams per gram, not as a percentage, so it shows more on a lower karat. That is why we show the pure metal value for each karat and let you type the board price into the ${h.a('jewellery-price', 'jewellery price calculator')}.</p>
 <h2>VAT and the refund</h2>
 <p>Jewellery carries {vat.AE} VAT under ${h.src('uaeDecreeLaw', 'Federal Decree-Law No. 8 of 2017')}, on gold and making. A non-resident tourist reclaims most of it less {tourist.fee} of the VAT and AED {tourist.fixed} per claim; the ${h.a('tourist-refund', 'refund calculator')} does the sum. UAE residents pay it in full, which is why the final prices friends quote to each other sometimes disagree.</p>`,

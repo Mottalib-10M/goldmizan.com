@@ -17,7 +17,7 @@ export default definePage({
       { q: 'هل المصنعية بالنسبة أفضل أم المصنعية للغرام؟', a: 'لا جواب واحد: المصنعية بالنسبة ترتفع مع سعر الذهب، والمصنعية للغرام ثابتة مهما تغير. في قطعة ثقيلة بسيطة تكون المصنعية للغرام غالبًا أرخص، وفي قطعة خفيفة دقيقة قد تكون النسبة أرخص. صفحة المصنعية تقارن بين العرضين على قطعتك. والفرق يتغير مع كل حركة في سعر الأونصة.' },
     ],
     body: (h) => `
-<h2>البنود الثلاثة في الفاتورة</h2>
+<h2>حساب سعر الذهب ببنود الفاتورة الثلاثة</h2>
 <p>قيمة الذهب هي الجزء الوحيد الذي لا يملك المحل أن يغيره كثيرًا، لأنها تتبع سعر الأونصة. المصنعية هي أجر الصانع وتكلفة التصميم وهامش المحل، وهي البند الذي تتفاوض عليه. أما الضريبة فتفرضها الدولة: ${h.src('ksaVatLaw', 'النظام السعودي')} بنسبة {vat.SA}، و${h.src('uaeDecreeLaw', 'المرسوم بقانون الإماراتي')} بنسبة {vat.AE}، و${h.src('nbrRate', 'الجهاز الوطني للإيرادات في البحرين')} بنسبة {vat.BH}، و${h.src('omanVatLaw', 'القانون العماني')} بنسبة {vat.OM}. لا يحق للمحل أن يحسبها على أساس آخر.</p>
 <h2>ثلاث طرق لكتابة المصنعية</h2>
 <p>المصنعية للغرام هي الأكثر شيوعًا في السعودية، فيقول البائع مثلًا إنها كذا ريالًا للغرام. المصنعية بالنسبة تُكتب كنسبة من قيمة الذهب، وتنتشر في محلات المجوهرات الإيطالية والهندية. والمبلغ الثابت يُستعمل للقطع المرصعة أو المصنوعة يدويًا. الحاسبة تقبل الطريقتين الأوليين مباشرة، وللثالثة يكفي أن تقسم المبلغ على الوزن وتكتبه للغرام. التفاصيل في ${h.a('making-charges', 'صفحة المصنعية')}.</p>
@@ -37,7 +37,7 @@ export default definePage({
       { q: 'Is a percentage making charge better than a per-gram one?', a: 'There is no single answer. A percentage rises with the gold price, a per-gram charge stays fixed whatever the market does. On a heavy plain piece per gram is often cheaper; on a light, detailed piece a percentage can win. The making charges page compares both offers on your own piece.' },
     ],
     body: (h) => `
-<h2>The three lines on the invoice</h2>
+<h2>Gold jewellery price: the three lines on the invoice</h2>
 <p>The gold value is the one part a shop cannot move much, since it follows the ounce. The making charge is the craftsman’s fee, design cost and shop margin, and it is the line you negotiate. VAT is set by the state: the ${h.src('ksaVatLaw', 'Saudi VAT Law')} at {vat.SA}, the ${h.src('uaeDecreeLaw', 'UAE Decree-Law')} at {vat.AE}, ${h.src('nbrRate', 'Bahrain’s National Bureau for Revenue')} at {vat.BH} and the ${h.src('omanVatLaw', 'Omani VAT Law')} at {vat.OM}. A shop has no right to compute it on another basis.</p>
 <h2>Three ways a making charge is quoted</h2>
 <p>Per gram is the most common in Saudi Arabia: the seller names so many riyals a gram. A percentage of the gold value is common in Italian and Indian jewellery shops. A fixed amount is used for set or handmade pieces. The calculator takes the first two directly; for the third, divide the amount by the weight and enter it per gram. More on the ${h.a('making-charges', 'making charges page')}.</p>

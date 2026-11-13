@@ -39,7 +39,7 @@ export default definePage({
       { q: 'How often does the 21K price change?', a: 'Whenever the ounce moves on the world market, which is throughout trading days. The riyal and the dirham are fixed to the dollar, so in Saudi Arabia and the UAE the change comes from the ounce alone, not from the currency. This page refreshes the price every five minutes while it stays open.' },
     ],
     body: (h) => `
-<h2>From the ounce to a gram of 21K</h2>
+<h2>From the ounce to the 21K gold price per gram</h2>
 <p>Exchanges quote gold per troy ounce, which weighs ${h.src('ukWeights', '31.1034768 g')}. Dividing the dollar price by that weight gives the dollar price of a gram of pure gold. Multiplying by the official rate turns it into local money: the Saudi Central Bank holds the riyal at {peg.SA} per dollar, the UAE central bank holds the dirham at {peg.AE}, and Bahrain and Oman have fixed pegs too. The last step is times 21, divided by 24. Saudi price boards follow that rule exactly: a gram of 21 is always seven eighths of a gram of 24.</p>
 <h2>What a shop adds on top</h2>
 <p>Three things. A small margin on the gram price itself, since the shop buys from a wholesaler and carries stock. The making charge, the fee for the craftsmanship, which goes from almost nothing on a plain chain to a lot on an engraved set. And VAT, charged on gold and making together: {vat.SA} in Saudi Arabia under ${h.src('ksaVatLaw', 'Article 2 of the VAT Law')}, {vat.AE} in the UAE. So a ten-gram bangle costs well over ten times the gram price shown here; the ${h.a('jewellery-price', 'jewellery price calculator')} shows each line.</p>

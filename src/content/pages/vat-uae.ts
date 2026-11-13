@@ -20,7 +20,7 @@ export default definePage({
       { q: 'هل تُحسب ضريبة على تصليح قطعة ذهب في دبي؟', a: 'التصليح خدمة يقدمها المحل، والخدمات خاضعة للنسبة الأساسية {vat.AE} كالسلع، ما لم يرد استثناء. الضريبة تُحسب على أجر التصليح وعلى أي ذهب يضيفه الصائغ إلى القطعة. اطلب فاتورة تفصل الأجر عن قيمة الذهب المضاف، ليتضح على ماذا دفعت الضريبة، واحتفظ بها مع القطعة.' },
     ],
     body: (h) => `
-<h2>النسبة الأساسية {vat.AE}</h2>
+<h2>ضريبة الذهب في الإمارات: النسبة الأساسية {vat.AE}</h2>
 <p>تنص ${h.src('uaeDecreeLaw', 'المادة الثالثة من المرسوم بقانون اتحادي رقم 8 لسنة 2017 وتعديلاته')} على فرض الضريبة بنسبة أساسية {vat.AE} على كل توريد أو استيراد، مع مراعاة الأحكام الخاصة. المجوهرات الذهبية تخضع لهذه النسبة على قيمتها كاملة، والمصنعية جزء منها. في محل في ديرة يبيع سلسلة عيار 22 بسعر للغرام ومصنعية للغرام، تُحسب الضريبة على حاصل جمع الاثنين، لا على سعر الغرام وحده.</p>
 <h2>المادة 36: نسبة الصفر للمعادن الاستثمارية</h2>
 <p>تنص ${h.src('uaeExecReg', 'المادة 36 من اللائحة التنفيذية')} على أن توريد أو استيراد المعادن الثمينة الاستثمارية يخضع لنسبة الصفر، وتعرفها بأنها الذهب والفضة والبلاتين الذي تبلغ نقاوته 99% أو أكثر ويكون بشكل قابل للتداول في أسواق السبائك العالمية. لا يقيد النص ذلك بأول توريد ولا بصفة البائع، بخلاف ${h.a('vat-saudi', 'القاعدة السعودية')}. عمليًا تُباع السبائك من غرام واحد إلى كيلو، والعملات الذهبية الاستثمارية، بسعر الذهب مع علاوة البائع ودون ضريبة.</p>
@@ -49,7 +49,7 @@ export default definePage({
       { q: 'Can I reclaim VAT on a piece bought online from a UAE shop?', a: 'The decision allows a refund for a tourist who buys on an electronic platform and requests the refund from their personal account at purchase, provided they receive the goods themselves in the country. The AED {tourist.min} minimum and the {tourist.days}-day export rule still apply.' },
     ],
     body: (h) => `
-<h2>The {vat.AE} standard rate</h2>
+<h2>The {vat.AE} standard rate of VAT on gold</h2>
 <p>${h.src('uaeDecreeLaw', 'Article 3 of Federal Decree-Law No. 8 of 2017 as amended')} imposes a standard rate of {vat.AE} on every supply or import, subject to specific provisions. Gold jewellery is taxed at that rate on its full value, making charge included. In a Deira shop selling a 22K chain at a gram price plus a making charge per gram, VAT is charged on the sum of the two, not on the gram price alone.</p>
 <h2>Article 36: zero rate for investment metals</h2>
 <p>${h.src('uaeExecReg', 'Article 36 of the Executive Regulation')} zero-rates the supply or import of investment precious metals, defined as gold, silver and platinum of a purity of 99% or more in a form tradeable in global bullion markets. The text does not limit this to a first supply or to the type of seller, unlike the ${h.a('vat-saudi', 'Saudi rule')}. In practice bars from one gram to a kilo and investment coins are sold at the gold price plus the dealer premium, with no VAT.</p>

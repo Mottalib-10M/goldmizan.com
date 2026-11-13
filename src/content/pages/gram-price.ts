@@ -16,7 +16,7 @@ export default definePage({
       { q: 'ما الذي يجعل سعر الجرام في الكويت مختلفًا قليلًا؟', a: 'الدينار الكويتي مربوط بسلة عملات بحسب بنك الكويت المركزي، فلا يساوي الدولار عددًا ثابتًا من الفلوس. إذا تحرك الدولار أمام العملات الأخرى تحرك سعر الجرام بالدينار ولو ثبتت الأونصة. الفرق صغير لكنه سبب اختلاف الكويت في الجدول. وتظهر قيمة الدينار المستعملة تحت الحاسبة.' },
     ],
     body: (h) => `
-<h2>سعر الجرام الآن في دول الخليج الست</h2>
+<h2>سعر جرام الذهب الآن في دول الخليج الست</h2>
 <!--tool:compare-->
 <p>الحاسبة أعلاه تقارن قطعة واحدة في البلدان الست مع الضريبة. أما أسعار الصرف التي يقوم عليها كل سطر فهي: ${h.src('sama', 'البنك المركزي السعودي')} عند {peg.SA}، و${h.src('cbuae', 'مصرف الإمارات المركزي')} عند {peg.AE}، و${h.src('cbb', 'مصرف البحرين المركزي')} عند {peg.BH}، و${h.src('cbo', 'البنك المركزي العماني')} عند {peg.OMusd} دولار للريال، والدينار الكويتي بسعر اليوم لأنه ${h.src('cbk', 'مربوط بسلة عملات')}.</p>
 <h2>كم خانة عشرية تقرأ</h2>
@@ -36,7 +36,7 @@ export default definePage({
       { q: 'Why is Kuwait slightly different in the table?', a: 'The Kuwaiti dinar follows a basket of currencies according to the Central Bank of Kuwait, so a dollar is not a fixed number of fils. When the dollar moves against other currencies, the dinar gram price moves even with a flat ounce. The gap is small, but it is the reason Kuwait stands apart.' },
     ],
     body: (h) => `
-<h2>The gram price now in the six Gulf countries</h2>
+<h2>The gold price per gram now in the six Gulf countries</h2>
 <!--tool:compare-->
 <p>The calculator above prices one piece in all six countries with VAT. The exchange rates behind each line are the ${h.src('sama', 'Saudi Central Bank')} at {peg.SA}, the ${h.src('cbuae', 'UAE central bank')} at {peg.AE}, the ${h.src('cbb', 'Central Bank of Bahrain')} at {peg.BH}, the ${h.src('cbo', 'Central Bank of Oman')} at USD {peg.OMusd} per rial, and the Kuwaiti dinar at today’s rate since it is ${h.src('cbk', 'pegged to a basket')}.</p>
 <h2>How many decimals to read</h2>

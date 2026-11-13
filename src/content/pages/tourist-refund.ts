@@ -16,7 +16,7 @@ export default definePage({
       { q: 'هل تُسترد ضريبة السبائك الذهبية؟', a: 'السبائك والعملات الاستثمارية بنقاوة 99% فأكثر تخضع أصلًا لنسبة الصفر في الإمارات بحسب المادة 36 من اللائحة التنفيذية، فلا توجد ضريبة لتُسترد. الاسترداد يخص المجوهرات والمشغولات الخاضعة لنسبة {vat.AE}. فالمقيم والسائح يشتريان السبيكة المؤهلة بالسعر نفسه، ولا يحتاج أي منهما إلى مستند استرداد عند المغادرة.' },
     ],
     body: (h) => `
-<h2>الشروط كما وردت في القرار</h2>
+<h2>شروط استرداد ضريبة الذهب كما وردت في القرار</h2>
 <p>يحدد ${h.src('uaeTourist', 'قرار الهيئة الاتحادية للضرائب رقم 2 لسنة 2018 وتعديلاته')} ما يلي: الحد الأدنى للمشتريات شاملة الضريبة {tourist.min} درهم من البائع الخاضع للضريبة نفسه، وإثبات خروج البضاعة خلال {tourist.days} يومًا من تاريخ التوريد، ورسم إداري بنسبة {tourist.fee} من الضريبة المستردة، ورسم ثابت {tourist.fixed} درهم لكل طلب، وسقف للاسترداد النقدي قدره {tourist.cap} درهم لكل سائح خلال 24 ساعة. ويُستثنى ما لا يرافق السائح عند المغادرة وما استُهلك داخل الدولة.</p>
 <h2>من هو السائح بحسب اللائحة</h2>
 <p>تعرّف ${h.src('uaeExecReg', 'اللائحة التنفيذية')} السائح الأجنبي بأنه أي شخص طبيعي غير مقيم في أي من الدول المطبقة، وليس من طاقم الرحلة. هذا التعريف هو سبب أن المقيم في دبي لا يستفيد من النظام ولو كان يحمل جواز سفر أجنبيًا. تأكد أيضًا من أن المحل مشارك في النظام قبل الدفع، لأن المستند يصدره البائع وقت الشراء.</p>
@@ -37,7 +37,7 @@ export default definePage({
     body: (h) => `
 <h2>The conditions as the decision sets them</h2>
 <p>${h.src('uaeTourist', 'FTA Decision No. 2 of 2018 as amended')} sets: a minimum of AED {tourist.min} of VAT-inclusive purchases from the same taxable person; proof the goods leave within {tourist.days} days of supply; an administrative fee of {tourist.fee} of the VAT refunded; a fixed fee of AED {tourist.fixed} per claim; and a cash refund cap of AED {tourist.cap} per tourist in 24 hours. Goods not carried out by the tourist and goods consumed in the country are excluded.</p>
-<h2>Who counts as a tourist</h2>
+<h2>Who counts as a tourist for the VAT refund</h2>
 <p>The ${h.src('uaeExecReg', 'Executive Regulation')} defines an overseas tourist as any natural person not resident in any implementing state and not a crew member. That definition is why a Dubai resident cannot use the scheme even on a foreign passport. Also check that the shop takes part in the scheme before paying, since the retailer issues the document at the time of purchase.</p>
 <h2>The net figure and what to do with it</h2>
 <p>The VAT inside a VAT-inclusive price is not {vat.AE} of it but the price times the rate divided by one plus the rate, since VAT was charged on the price before it. The calculator does exactly that before taking the fees off. Use the net amount in the ${h.a('compare-countries', 'comparison calculator')}: subtract it from the UAE price before comparing with the price at home.</p>`,

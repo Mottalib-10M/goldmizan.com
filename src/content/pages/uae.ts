@@ -17,7 +17,7 @@ export default definePage({
       { q: 'هل يتغير سعر الذهب بالدرهم بين الصباح والمساء؟', a: 'نعم، لأن الأونصة تتداول طوال اليوم في الأسواق العالمية، والدرهم ثابت مقابل الدولار. المحلات في دبي تحدّث لوحاتها عدة مرات في اليوم. هذه الصفحة تجلب سعر الأونصة عند فتحها ثم كل خمس دقائق، وتعرض وقت آخر تحديث بتوقيت غرينتش، فتعرف عمر الرقم الذي تراه.' },
     ],
     body: (h) => `
-<h2>من الأونصة إلى الدرهم</h2>
+<h2>من الأونصة إلى سعر الذهب في الإمارات بالدرهم</h2>
 <p>جداول ${h.src('cbuae', 'مصرف الإمارات المركزي')} لأسعار الصرف تثبت الدولار عند {peg.AE} درهم يومًا بعد يوم. نضرب سعر الأونصة بالدولار في هذا الرقم ونقسمه على وزن الأونصة بالغرام، فنحصل على غرام عيار 24 بالدرهم، ثم نطبق نسبة العيار: 22 على 24 لعيار 22 الشائع في دبي، و21 على 24، و18 على 24. لا نستخدم أي سعر صرف تجاري.</p>
 <h2>لوحة السوق والهامش الثابت</h2>
 <p>من يقارن لوحة محل في ديرة بحساب هذه الصفحة يلاحظ أن الفرق بينهما أكبر في عيار 18 منه في عيار 24. السبب أن المحل يضيف مبلغًا على كل غرام يكاد يكون واحدًا في كل العيارات، فيصبح نسبة أكبر من غرام أرخص. لهذا لا يكفي أن تضرب سعر 24 في نسبة العيار لتتوقع سعر اللوحة. في ${h.a('jewellery-price', 'حاسبة سعر القطعة')} يمكنك كتابة سعر اللوحة مكان سعرنا لترى السعر النهائي الحقيقي.</p>
@@ -39,7 +39,7 @@ export default definePage({
       { q: 'Does the dirham gold rate change during the day?', a: 'Yes. The ounce trades around the clock on world markets and the dirham is fixed to the dollar, so the rate moves with the ounce. Dubai shops update their boards several times a day. This page fetches the ounce price when it opens and then every five minutes, and shows the time of the last update in GMT.' },
     ],
     body: (h) => `
-<h2>From the ounce to dirhams</h2>
+<h2>From the ounce to the Dubai gold rate in dirhams</h2>
 <p>The ${h.src('cbuae', 'UAE central bank')} exchange rate tables list the US dollar at {peg.AE} dirhams day after day. We multiply the dollar ounce price by that figure and divide by the ounce weight to get a gram of 24K in dirhams, then apply the karat ratio: 22/24 for the 22K that most Dubai jewellers stock, 21/24 and 18/24. No commercial exchange rate is involved.</p>
 <h2>The souq board and its fixed margin</h2>
 <p>Hold a board in a Deira shop against this page and the gap is wider on 18K than on 24K. Shops add an amount per gram that is close to the same for every karat, so it is a bigger share of a cheaper gram. Multiplying the 24K board price by the karat ratio will therefore not predict the 22K board price. In the ${h.a('jewellery-price', 'jewellery price calculator')} you can type the shop board price instead of ours and see the real final price.</p>

@@ -20,7 +20,7 @@ export default definePage({
       { q: 'هل تختلف علاوة السبيكة بين الشراء نقدًا وبالبطاقة؟', a: 'قد يضيف بعض الباعة رسمًا على الدفع بالبطاقة، فيرتفع السعر الفعلي للسبيكة. اسأل عن السعر في الحالتين قبل الدفع، واكتب الفرق في خانة العلاوة بالحاسبة لترى أثره على سعر الغرام. وفي الدول التي تطبق الضريبة على السبائك تزيد الضريبة أيضًا بزيادة المبلغ.' },
     ],
     body: (h) => `
-<h2>من الوزن إلى السعر</h2>
+<h2>من الوزن إلى سعر سبائك الذهب</h2>
 <p>قيمة الذهب في السبيكة = الوزن بالغرام × سعر غرام عيار 24. سعر الغرام نحسبه من سعر الأونصة مقسومًا على ${h.src('ukWeights', '31.1034768 غرام')} ومضروبًا في سعر صرف البلد. ثم تأتي علاوة البائع، وتُكتب عادة نسبة فوق سعر السوق أو مبلغًا للسبيكة، ثم الضريبة على المجموع إن وجبت. الحاسبة تقبل العلاوة نسبة، فإن ذكر البائع مبلغًا فاقسمه على قيمة الذهب لتحصل على النسبة.</p>
 <h2>الإمارات: صفر عند أي بائع</h2>
 <p>تنص ${h.src('uaeExecReg', 'المادة 36 من اللائحة التنفيذية الإماراتية')} على نسبة الصفر لتوريد واستيراد المعادن الثمينة الاستثمارية، أي الذهب والفضة والبلاتين بنقاوة 99% فأكثر وبشكل قابل للتداول في أسواق السبائك العالمية. لا شرط على صفة البائع. لهذا تكون السبيكة في دبي بسعر الذهب مع العلاوة فقط، ويكون الفرق مع المجوهرات كبيرًا لمن يريد الادخار.</p>
@@ -49,7 +49,7 @@ export default definePage({
       { q: 'How much does a ten-tola bar weigh?', a: 'A tola is 180 grains, about {tola} g, so a ten-tola bar holds about 116.6 g of pure gold. It is popular in Dubai with Indian and Pakistani buyers. Enter its weight in the ounce and tola calculator for its dirham value, then add the dealer premium here.' },
     ],
     body: (h) => `
-<h2>From weight to price</h2>
+<h2>From weight to gold bar price</h2>
 <p>Gold value of a bar = weight in grams × 24K gram price. We take the gram price from the ounce price divided by ${h.src('ukWeights', '31.1034768 g')} and multiplied by the country’s exchange rate. Then comes the dealer premium, usually quoted as a percentage over the market price or an amount per bar, then VAT on the total where due. The calculator takes the premium as a percentage; if the dealer names an amount, divide it by the gold value to get the percentage.</p>
 <h2>UAE: zero from any seller</h2>
 <p>${h.src('uaeExecReg', 'Article 36 of the UAE Executive Regulation')} zero-rates the supply and import of investment precious metals, meaning gold, silver and platinum of 99% purity or more in a form tradeable in global bullion markets. Nothing restricts who the seller is. A bar in Dubai therefore costs the gold plus the premium only, and the gap with jewellery is wide for anyone saving.</p>

@@ -17,7 +17,7 @@ export default definePage({
       { q: 'لماذا لا يتأثر سعر الذهب بالريال بتغير الدولار؟', a: 'لأن الريال مربوط بالدولار بسعر رسمي ثابت. إذا ضعف الدولار أمام اليورو مثلًا وارتفعت الأونصة بالدولار، يرتفع الذهب بالريال بالنسبة نفسها تمامًا. لا يوجد أثر عملة مستقل كما في مصر أو تركيا، لذلك يكفي في السعودية متابعة سعر الأونصة بالدولار. والحاسبة تعرض الأونصة بالدولار.' },
     ],
     body: (h) => `
-<h2>سعر الصرف الذي يقوم عليه الحساب</h2>
+<h2>سعر الصرف الذي يقوم عليه سعر الذهب في السعودية</h2>
 <p>يعلن ${h.src('sama', 'البنك المركزي السعودي')} التزامه بالمحافظة على سعر الصرف الرسمي عند {peg.SA} ريال للدولار. هذا الرقم هو ما نستخدمه في كل حساب بالريال على الموقع، ولا نستعمل سعرًا من سوق الصرافة. الأونصة تُسعَّر عالميًا بالدولار، فيكفي ضربها في {peg.SA} وقسمتها على وزنها بالغرام لنحصل على غرام عيار 24 بالريال، ثم نطبق نسبة العيار.</p>
 <h2>ما الذي يدفعه المشتري فوق قيمة الذهب</h2>
 <p>الفاتورة السعودية النموذجية فيها أربعة أسطر: الوزن والعيار، وسعر الغرام، والمصنعية، وضريبة القيمة المضافة. الضريبة {vat.SA} بحسب ${h.src('ksaVatLaw', 'نظام ضريبة القيمة المضافة')}، وتشمل المصنعية. بعض المحلات تعلن سعرًا للغرام شاملًا المصنعية، فيصعب على المشتري أن يعرف كم دفع للصياغة. اطلب الفصل بين السطرين، ثم أدخل الأرقام في ${h.a('jewellery-price', 'حاسبة سعر القطعة')} لتعرف إن كان العرض معقولًا.</p>
@@ -43,7 +43,7 @@ export default definePage({
 <p>The ${h.src('sama', 'Saudi Central Bank')} states its commitment to the official rate of {peg.SA} riyals per dollar. That is the rate used for every riyal figure on this site; we never use a money-changer rate. Gold is quoted per ounce in dollars, so multiplying by {peg.SA} and dividing by the ounce weight gives a gram of 24K in riyals, then the karat ratio applies.</p>
 <h2>What the buyer pays on top of the gold</h2>
 <p>A typical Saudi invoice has four lines: weight and karat, gram price, making charge, VAT. VAT is {vat.SA} under the ${h.src('ksaVatLaw', 'VAT Law')}, and it covers the making charge. Some shops quote a gram price that already includes making, which hides how much went on craftsmanship. Ask for the two lines separately, then enter them in the ${h.a('jewellery-price', 'jewellery price calculator')} to see whether the offer holds up.</p>
-<h2>Bars and coins in the Saudi market</h2>
+<h2>Gold bars and coins on sale in Saudi Arabia</h2>
 <p>${h.src('ksaVatRegs', 'Article 36 of the Implementing Regulations')} zero-rates the first supply of qualifying gold, silver or platinum, 99% pure or better and tradeable worldwide, made by the producer or refiner. That is narrower than the UAE rule, which zero-rates every supply. Many websites say bars are simply exempt in Saudi Arabia without that condition; the safe course is to check the rate printed on the tax invoice. The ${h.a('gold-bars', 'bar price calculator')} lets you compare both cases.</p>
 <h2>Zakat and selling</h2>
 <p>Anyone holding gold in the Kingdom usually needs two numbers: what it is worth today and how much zakat is due if it reaches the nisab. The calculator above gives the first; the ${h.a('zakat-gold', 'gold zakat calculator')} gives the second, adding up different karats as pure gold. When you sell, a shop pays the metal value minus its deduction; neither the making charge nor the VAT comes back.</p>`,

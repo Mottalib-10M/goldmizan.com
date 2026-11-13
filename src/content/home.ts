@@ -12,7 +12,7 @@ export const HOME: Record<'ar' | 'en', HomeText> = {
     title: 'سعر الذهب اليوم {year}: غرام 24 و22 و21 و18 في السعودية',
     description: 'سعر الذهب اليوم محسوب أمامك من سعر الأونصة الآن: غرام عيار 24 و22 و21 و18 بالريال والدرهم والدينار، وسعر القطعة النهائي بالمصنعية وضريبة القيمة المضافة لكل بلد.',
     h1: 'سعر الذهب اليوم في السعودية والخليج',
-    lead: 'اختر البلد والعيار والوزن: السعر يُحسب الآن من سعر الأونصة وسعر الصرف الرسمي، مع وقت آخر تحديث.',
+    lead: 'اختر البلد والعيار والوزن: يُحسب سعر الذهب الآن من سعر الأونصة وسعر الصرف الرسمي، مع وقت آخر تحديث.',
     resume: 'سعر الذهب اليوم في السعودية والإمارات وبقية دول الخليج لا يحتاج إلى خبر صحفي: يكفي سعر الأونصة العالمي بالدولار وسعر صرف العملة المحلية. نقسم سعر الأونصة على {oz} غرام، وهو وزن الأونصة التروي، فنحصل على غرام الذهب الخالص بالدولار، ثم نضربه في سعر الصرف الذي يعلنه البنك المركزي: {peg.SA} ريال للدولار في السعودية، و{peg.AE} درهم في الإمارات، و{peg.BH} دينار في البحرين، و{peg.OMusd} دولار للريال في عُمان، وسعر اليوم للدينار الكويتي والريال القطري. ثم نضرب في نسبة العيار: 22 أو 21 أو 18 على 24. الأرقام في هذه الصفحة تُحدَّث كل خمس دقائق ما دامت مفتوحة، ويظهر وقت آخر سعر للأونصة تحت الحاسبة. هذا هو سعر الذهب الخام قبل هامش المحل والمصنعية وضريبة القيمة المضافة، وهي {vat.SA} في السعودية و{vat.AE} في الإمارات، ولكل منها حاسبة في الموقع.',
     faqs: [
       { q: 'كم سعر غرام الذهب عيار 21 اليوم في السعودية؟', a: 'الرقم يتغير مع سعر الأونصة، لذلك نعرضه في الحاسبة أعلى الصفحة لا في النص: اختر السعودية وعيار 21 تجد سعر الغرام بالريال مع وقت آخر تحديث. يساوي دائمًا سبعة أثمان غرام عيار 24، ويُضاف إليه في المحل هامش ومصنعية وضريبة {vat.SA}، ثم المصنعية التي يحددها المحل.' },
@@ -48,7 +48,7 @@ export const HOME: Record<'ar' | 'en', HomeText> = {
     title: 'Gold Rate Today {year}: 24K, 22K, 21K, 18K in Dubai and Saudi',
     description: 'Gold rate today from the live ounce price: a gram of 24, 22, 21 and 18 karat in dirhams, riyals and dinars, plus a piece’s final price with making and VAT.',
     h1: 'Gold rate today in the UAE, Saudi Arabia and the Gulf',
-    lead: 'Pick a country, karat and weight: the price is worked out now from the ounce price and the official exchange rate, with the time of the last update.',
+    lead: 'Pick a country, karat and weight: the gold price is worked out now from the ounce price and the official exchange rate, with the time of the last update.',
     resume: 'The gold rate today in the UAE, Saudi Arabia and the rest of the Gulf does not need a news article: the world ounce price in dollars and the local exchange rate are enough. We divide the ounce price by {oz} grams, the weight of a troy ounce, to get a gram of pure gold in dollars, then multiply by the rate the central bank announces: AED {peg.AE} per dollar in the UAE, SAR {peg.SA} in Saudi Arabia, BHD {peg.BH} in Bahrain, USD {peg.OMusd} per rial in Oman, and today’s rate for the Kuwaiti dinar and the Qatari riyal. Then we multiply by the karat ratio, 22, 21 or 18 over 24. The figures on this page refresh every five minutes while it is open, and the time of the last ounce price is shown under the calculator. This is the raw gold value before the shop margin, the making charge and VAT, which is {vat.AE} in the UAE and {vat.SA} in Saudi Arabia; each has its own calculator on the site. If you live in Dubai or Riyadh and want to know what a gram really costs before walking into the souq, start here.',
     faqs: [
       { q: 'What is the 22K gold rate in Dubai today?', a: 'It moves with the ounce, so we show it in the calculator at the top rather than in the text: pick the UAE and 22K to see the dirham gram price with the time of the last update. It is always 22/24 of the 24K gram; Dubai shop boards add a margin per gram, then making and {vat.AE} VAT.' },
@@ -60,7 +60,7 @@ export const HOME: Record<'ar' | 'en', HomeText> = {
       { q: 'Can I put this calculator on my own website?', a: 'Yes. The embed page gives you ready-to-copy iframe code showing the gold rate calculator in Arabic or English, with a source link under it. The calculator runs in the visitor’s browser and collects no data from them; use is free as long as the source link stays visible.' },
     ],
     body: (h) => `
-<h2>The same piece in all six Gulf countries now</h2>
+<h2>The same piece at today’s gold rate in all six Gulf countries</h2>
 <p>Convert the gram price in the UAE, Saudi Arabia, Bahrain and Oman to dollars and it is almost the same, because their currencies are pegged to the dollar. What changes the final price is VAT and the making charge. The next calculator takes one piece with one making rate and prices it in all six countries, cheapest first.</p>
 <!--tool:compare-->
 <h2>Why our figure does not always match the shop board</h2>

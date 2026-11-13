@@ -16,7 +16,7 @@ export default definePage({
       { q: 'هل يعني ارتفاع الذهب في الماضي أنه سيرتفع مستقبلًا؟', a: 'لا. الجدول يبين ما حدث، وقد مر الذهب بسنوات طويلة من الانخفاض أو الركود قبل فترات الارتفاع. هذه الصفحة أداة حساب لا نصيحة استثمار، والقرار يعود إليك أو إلى مستشار مالي مرخص في بلدك. والجدول يبين أيضًا أن السعر قد ينخفض من سنة إلى أخرى.' },
     ],
     body: (h) => `
-<h2>المتوسط السنوي للأونصة منذ 2016</h2>
+<h2>سعر الذهب في السنوات منذ 2016: متوسط الأونصة السنوي</h2>
 <!--table:annual-->
 <p>الأرقام أعلاه متوسطات سنوية لأسعار الشهور في ${h.src('worldBank', 'بيانات البنك الدولي')}، ولسنة ${h.P.year} متوسط الشهور المنشورة حتى الآن فقط. تحويلها إلى الريال يكون بضربها في {peg.SA} بحسب ${h.src('sama', 'البنك المركزي السعودي')}، وإلى الدرهم بضربها في {peg.AE} بحسب ${h.src('cbuae', 'مصرف الإمارات المركزي')}.</p>
 <h2>كيف تقرأ نتيجة الحاسبة</h2>
@@ -36,7 +36,7 @@ export default definePage({
       { q: 'Does a past rise in gold mean it will keep rising?', a: 'No. The table shows what happened, and gold has gone through long years of decline or stagnation before rises. This page is a calculation tool, not investment advice; the decision is yours or a licensed financial adviser’s in your country.' },
     ],
     body: (h) => `
-<h2>Yearly average ounce since 2016</h2>
+<h2>Yearly average gold price per ounce since 2016</h2>
 <!--table:annual-->
 <p>The figures above are yearly averages of the monthly prices in the ${h.src('worldBank', 'World Bank data')}; for ${h.P.year} they average only the months published so far. To convert to riyals multiply by {peg.SA}, per the ${h.src('sama', 'Saudi Central Bank')}; to dirhams by {peg.AE}, per the ${h.src('cbuae', 'UAE central bank')}.</p>
 <h2>Reading the calculator</h2>

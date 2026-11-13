@@ -16,7 +16,7 @@ export default definePage({
       { q: 'هل يصح جمع أوزان عيارات مختلفة مباشرة؟', a: 'لا يصح إذا كان الهدف قيمة الذهب أو الزكاة، لأن غرامًا من عيار 18 لا يساوي غرامًا من عيار 24. حوّل كل وزن إلى ذهب خالص أولًا ثم اجمع. حاسبة الزكاة تفعل ذلك تلقائيًا لكل العيارات معًا. وبعدها يصح الجمع والمقارنة بالنصاب.' },
     ],
     body: (h) => `
-<h2>القاعدة الواحدة</h2>
+<h2>القاعدة الواحدة لتحويل عيار الذهب</h2>
 <p>الوزن المعادل = الوزن × العيار الأصلي ÷ العيار المطلوب. هذه القاعدة صحيحة لأن سعر كل عيار في أسواق الخليج يُحسب كنسبة من سعر عيار 24، والقيمة تُحسب من سعر الأونصة الذي نجلبه من ${h.src('goldApi', 'gold-api.com')} مقسومًا على ${h.src('ukWeights', 'وزن الأونصة التروي')} ومضروبًا في سعر الصرف، مثل {peg.SA} ريال للدولار بحسب ${h.src('sama', 'البنك المركزي السعودي')}.</p>
 <h2>حالات تحتاج فيها إلى التحويل</h2>
 <p>جمع حلي العائلة لحساب الزكاة، إذ يُقاس النصاب بالذهب الخالص، وهو ما تفعله ${h.a('zakat-gold', 'حاسبة الزكاة')}. أو تقدير ما سيدفعه المحل لقطعة عيار 18 إن أردت مقابلها قطعة عيار 21. أو مقارنة سبيكة عيار 24 بقطعة بسيطة عيار 22 بالوزن نفسه من الذهب الخالص. في كل حالة يبدأ الحساب الصحيح من الذهب الخالص، لا من الوزن على الميزان.</p>
@@ -35,7 +35,7 @@ export default definePage({
       { q: 'Can I simply add up weights in different karats?', a: 'Not if the goal is value or zakat, because a gram of 18K is not worth a gram of 24K. Convert each weight to pure gold first, then add. The zakat calculator does this for all karats at once, so you only need to type the weights.' },
     ],
     body: (h) => `
-<h2>The one rule</h2>
+<h2>The one rule for converting gold karats</h2>
 <p>Equivalent weight = weight × original karat ÷ target karat. The rule holds because every karat in Gulf markets is priced as a share of the 24K price, and the value comes from the ounce price we fetch from ${h.src('goldApi', 'gold-api.com')}, divided by the ${h.src('ukWeights', 'troy ounce weight')} and multiplied by the exchange rate, for example {peg.SA} riyals per dollar per the ${h.src('sama', 'Saudi Central Bank')}.</p>
 <h2>When you need it</h2>
 <p>Adding up a family’s jewellery for zakat, since the nisab is measured in pure gold, which the ${h.a('zakat-gold', 'zakat calculator')} does. Estimating what a shop will give for an 18K piece if you want a 21K one in exchange. Comparing a 24K bar with a plain 22K piece holding the same pure gold. In each case the right sum starts from the pure gold, not from the weight on the scale.</p>
