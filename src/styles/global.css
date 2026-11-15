@@ -77,3 +77,8 @@ html[dir="rtl"] .skip-link { left: auto; right: 50%; transform: translateX(50%);
 .clamp-toggle:checked ~ p .clamp-rest { display: inline; }
 .clamp-more { cursor: pointer; font-size: .9rem; font-weight: 600; color: var(--color-accent-700); text-decoration: underline; }
 .clamp-toggle:checked ~ .clamp-more { display: none; }
+
+/* Champs en subgrid : quand le formulaire est étiré à la hauteur du résultat voisin, ses rangées ne doivent pas s'étirer (trous entre libellé, case et aide). */
+:where(form, div, fieldset):has(> .grid-rows-subgrid) { align-content: start; }
+/* Dans une grille, le cadre du formulaire s'arrête sous ses champs au lieu de s'étirer à la hauteur du résultat. */
+.grid > form:has(> .grid-rows-subgrid) { align-self: start; }
